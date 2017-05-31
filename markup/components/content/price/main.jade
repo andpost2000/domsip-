@@ -1,12 +1,12 @@
 include ../../col-left/col-left
 include ../../col-right/col-right
-include ../../contacts-page/contacts-page
+include ../../price/price
 mixin main(data)
 	+b.MAIN.page-content
 		+e.title-wrap
-			+e.H1.title Наши контакты для связи и реквизиты
+			+e.H1.title Цены на продукцию и услуги ООО "Стильный дом"
 		+e.wrap
 			+col-left
 			+b.col-center
-				+contacts-page
+				+price
 			+col-right

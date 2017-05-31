@@ -1,12 +1,12 @@
 include ../../col-left/col-left
 include ../../col-right/col-right
-include ../../contacts-page/contacts-page
+include ../../aboutus/aboutus
 mixin main(data)
 	+b.MAIN.page-content
 		+e.title-wrap
-			+e.H1.title Наши контакты для связи и реквизиты
+			+e.H1.title ООО "СТИЛЬНЫЙ ДОМ" несколько слов о нас
 		+e.wrap
 			+col-left
 			+b.col-center
-				+contacts-page
+				+aboutus
 			+col-right

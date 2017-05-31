@@ -1,6 +1,7 @@
 extends ../components/layout-default/layout-default
 include ../components/header/header
 include ../components/footer/footer
+include ../components/content/price/main
 
 block head
 	- var pageTitle = 'my title';
@@ -8,4 +9,5 @@ block head
 	- var pageKeywords = 'my data';
 block content
 	+header
+	+main
 	+footer

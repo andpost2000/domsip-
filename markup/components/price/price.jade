@@ -1,0 +1,219 @@
+mixin price(data)
+	+b.price
+		+e.TABLE.item
+			+e.CAPTION.title Цена домокомплектов
+			tr
+				+e.TH.head._left Комплектация
+				+e.TH.head._center Состав
+				+e.TH.head._right
+					| Цена за м
+					sup 2
+			tr
+				+e.TD.td._left Базовая
+				+e.TD.td._center Панели стенеовые, панели перекрытий, панели внутренних перегородок
+				+e.TD.td._right от 100 у.е.
+			tr
+				+e.TD.td._left Базовая плюс
+				+e.TD.td._center
+					| Пиломатериалы для сборки, крепеж, монтажная пена, антисептик, пленка гидроизоляционная, мастика.
+				+e.TD.td._right от 150 у.е.
+			tr
+				+e.TD.td._left Люкс
+				+e.TD.td._center Домокомплект "Базовый плюс" со сборкой на фундаменте заказчика.
+				+e.TD.td._right от 180 у.е.
+			tr
+				+e.TD.td._left Люкс плюс
+				+e.TD.td._center Домокомплект "Базовый плюс" со сборкой на наш фундамент (винтовые сваи).
+				+e.TD.td._right от 195 у.е.
+			tr
+				+e.TD.td._left Премиум
+				+e.TD.td._center
+					| Домокомплект "Базовый плюс" со сборкой на наш фундамент (винтовые сваи) + окна, дверь входная, кровля металлочерепица.
+				+e.TD.td._right от 250 у.е.
+		+e.TABLE.item
+			+e.CAPTION.title Пенопласт цена
+			tr
+				+e.TH.head._left Марка 
+				+e.TH.head._center Оболастьр применения
+				+e.TH.head._right
+					| Цена за м
+					sup 3
+			tr
+				+e.TD.td._left ПСБ - 15
+				+e.TD.td._center Внутреннее утепление, звуко изоляция.
+				+e.TD.td._right 90 руб.
+			tr
+				+e.TD.td._left ПСБ - 20
+				+e.TD.td._center Утепление фасадов.
+				+e.TD.td._right 110 руб.
+			tr
+				+e.TD.td._left ПСБ - 25
+				+e.TD.td._center Утепление полов, фундаментов и цокольных этажей.
+				+e.TD.td._right 130 руб.
+		+e.TABLE.item
+			+e.CAPTION.title СИП панели цена
+			tr
+				+e.TH.head._1 Длинна х Ширина мм
+				+e.TH.head._2 Толщина панели мм
+				+e.TH.head._3 Толщина ОСП мм
+				+e.TH.head._4 Цена за шт.
+				+e.TH.head._1 Длинна х Ширина мм
+				+e.TH.head._2 Толщина панели мм
+				+e.TH.head._3 Толщина ОСП мм
+				+e.TH.head._4 Цена за шт.
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 118
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 51.6 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 118
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 25.8 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 168
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 58.6 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 168
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 29.3 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 218
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 59.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 218
+				+e.TD.td._3 9
+				+e.TD.td._4
+					| 29.5 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 120
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 53.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 120
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 26.5 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 170
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 60.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 170
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 30.0 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 220
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 67.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 220
+				+e.TD.td._3 10
+				+e.TD.td._4
+					| 33.5 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 124
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 56.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 124
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 28.0 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 174
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 63.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 174
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 31.5 
+					b у.е
+			tr
+				+e.TD.td._1 2500 Х 1250
+				+e.TD.td._2 224
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 70.0 
+					b у.е
+				+e.TD.td._1 2500 Х 625
+				+e.TD.td._2 224
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 35.5 
+					b у.е
+			tr
+				+e.TD.td._1 2800 Х 1250
+				+e.TD.td._2 124
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 66.0 
+					b у.е
+				+e.TD.td._1 2800 Х 625
+				+e.TD.td._2 124
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 33.0 
+					b у.е
+			tr
+				+e.TD.td._1 2800 Х 1250
+				+e.TD.td._2 174
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 73.0 
+					b у.е
+				+e.TD.td._1 2800 Х 625
+				+e.TD.td._2 174
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 36.5 
+					b у.е
+			tr
+				+e.TD.td._1 2800 Х 1250
+				+e.TD.td._2 224
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 80.0 
+					b у.е
+				+e.TD.td._1 2800 Х 625
+				+e.TD.td._2 224
+				+e.TD.td._3 12
+				+e.TD.td._4
+					| 40.0 
+					b у.е

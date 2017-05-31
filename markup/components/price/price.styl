@@ -1,0 +1,54 @@
+.price {
+    padding-top: 15px;
+    font-family $font-1
+    &__item {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    &__head {
+        padding: 5px 0;
+        background-color: #ddd;
+        sup {
+            font-size: 12px;
+            line-height: 10px;
+        }
+        &_left {
+            width: 17%;
+        }
+        &_center {
+            width: 68%;
+        }
+        &_right {
+            width: 15%;
+        }
+    }
+    tr:nth-child(odd) {
+        background-color: #e2e2e2;
+        .price__td_4 {
+            background-color: #ddd;
+        }
+    }
+    &__td {
+        padding: 3px 7px;
+        border-left: 1px dashed #ddd;
+        &:last-child {
+            border-right: 1px dashed #ddd;
+        }
+        &_4 {
+            background-color: #eee;
+            font-size: 15px;
+            font-weight: 700;
+            b {
+                font-size: 11px;
+            }
+        }
+        &_1 {
+            font-size: 15px;
+        }
+    }
+}
+
