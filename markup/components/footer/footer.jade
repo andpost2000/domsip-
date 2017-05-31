@@ -1,0 +1,9 @@
+include ../site-map/site-map
+include ../contacts/contacts
+include ../social/social
+mixin footer(data)
+	+b.FOOTER.page-footer
+		+site-map
+		+contacts
+		+social
+	+b.P.oferta * Цены на сайте носят сугубо ознакомительный характер и не являются публичной офертой!

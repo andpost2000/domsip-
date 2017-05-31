@@ -1,0 +1,9 @@
+mixin breadcrumbs(data)
+	+b.breadcrumbs
+		+e.UL.list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				+e.A.link(href='index.html', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+					span(itemprop='name') Главная
+			+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				+e.A.link(href='projects.html', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+					span(itemprop='name') Проекты

@@ -1,0 +1,20 @@
+!= jadeHelpers.Icon.call(locals, {iconName: 'insta', className: 'customClass', iconWidth: '25', iconHeight: '25'})
+mixin social(data)
+	+b.social
+		p Мы в социальных сетях
+		+e.A.btn._inst(href='https://www.instagram.com/ooostilnyidom/?hl=ru', target='_blank')
+			| Инстаграм
+			svg(width='40', height='40')
+				use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#insta')
+		+e.A.btn._ok(href='https://ok.ru/group/53658897481807', target='_blank')
+			| Одноклассники
+			svg(width='40', height='40')
+				use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#ok')
+		+e.A.btn._ok(href='https://www.youtube.com/channel/UCD1-L9AAFsdjms6ZjrWYoGQ', target='_blank')
+			| Ютуб
+			svg(width='40', height='40')
+				use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#youtube')
+		+e.A.btn._vk(href='https://vk.com/domizsip', target='_blank')
+			| Вконтакте
+			svg(width='50', height='40')
+				use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#vk')

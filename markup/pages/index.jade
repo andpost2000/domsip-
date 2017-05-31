@@ -1,0 +1,15 @@
+extends ../components/layout-default/layout-default
+//- include data.js
+include ../components/header/header
+include ../components/content/index/main
+include ../components/footer/footer
+
+block head
+	- var pageTitle = 'Дом из СИП панелей в Беларуси лучшие цены высокое качество | ООО "Стильный Дом"';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer
+

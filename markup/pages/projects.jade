@@ -1,0 +1,15 @@
+extends ../components/layout-default/layout-default
+//- include data.js
+include ../components/header/header
+include ../components/content/projects/main
+include ../components/footer/footer
+
+block head
+	- var pageTitle = 'Дом из СИП - Проекты';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer
+

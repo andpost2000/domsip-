@@ -1,0 +1,14 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../breadcrumbs/breadcrumbs
+include ../../goods/goods
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Проекты домов из СИП панелей
+		+e.wrap
+			+col-left
+			+b.col-center
+				+breadcrumbs
+				+goods
+			+col-right

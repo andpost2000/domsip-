@@ -1,0 +1,43 @@
+.contacts-aside {
+				width: 230px;
+				margin-top: 8px;
+				padding-top: 10px;
+				font-family $font-1
+				border: 1px solid #bbb;
+				border-radius: 3px;
+				background-color: rgba(20, 20, 20, 0.05);
+				&__phone {
+								font-size: 20px;
+				}
+				&__operator {
+								display: inline-block;
+								vertical-align: bottom;
+								position: relative;
+								margin-bottom: 10px;
+								padding-left: 60px;
+								padding-right: 5px;
+								font-size: 20px;
+								line-height: 25px;
+								span {
+												padding-right: 5px;
+												font-size: 15px;
+								}
+								&:before {
+												position absolute
+												content ''
+												top: 0;
+												left: 15px;
+												width: 30px;
+												height: 30px;
+								}
+								&_mts:before {
+												background-image: url(%=static=%/general/mts-phone-icon.jpg);
+								}
+								&_velcom:before {
+												background-image: url(%=static=%/general/velcom-phone-icon.jpg);
+								}
+								&_btk:before {
+												background-image: url(%=static=%/general/home-phone-icon.png);
+								}
+				}
+}

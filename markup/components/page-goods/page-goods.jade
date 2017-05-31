@@ -1,0 +1,39 @@
+mixin page-goods(data)
+	+b.page-goods
+		+e.H2.title
+			| Дом 30 м
+			sup 2
+		+e.img-wrap
+			img(src='static/img/content/30/1.jpg', width="740" alt='30')
+		+e.UL.preview
+			+e.LI.preview-item
+				+e.IMG.smallimage.active(rel='static/img/content/30/1.jpg', src='static/img/content/30/1c.jpg', width='230', alt='1')
+			+e.LI.preview-item
+				+e.IMG.smallimage(rel='static/img/content/30/2.jpg', src='static/img/content/30/2c.jpg', width='230', alt='2')
+			+e.LI.preview-item
+				+e.IMG.smallimage(rel='static/img/content/30/3.jpg', src='static/img/content/30/3c.jpg', width='230', alt='3')
+		+e.UL.features
+			+e.LI.features-item
+				span Общая площадь:
+				b
+					| 30 м
+					sup 2
+			+e.LI.features-item
+				span Площадь застройки:
+				b
+					| 50 м
+					sup 2
+			+e.LI.features-item
+				span Этажность:
+				b 1
+			+e.LI.features-item
+				span Особенности:
+				b Терраса
+			+e.LI.features-item
+				span Стоимость:
+				b 7500 y.e. Комплектация "Премиум" *
+			+e.LI.features-item
+				span Номер проекта:
+				b 1
+		+e.P.description
+			| Отличное решение для дачного дома. Полноценная жилая комната, просторная кухня и сан.узел. Большая терраса, даёт прекрасную возможность наслаждаться свежим воздухом в гармонии с природой. Благодаря применяемым технологиям дом пригоден для круглогодичного проживания.

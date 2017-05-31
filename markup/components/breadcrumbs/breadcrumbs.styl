@@ -1,0 +1,54 @@
+.breadcrumbs {
+				font-family $font-1
+				&__list {
+								position: relative;
+								display: flex;
+								margin-top: 20px;
+								margin-left: 10px;
+								padding-left: 30px;
+				}
+				&__item {
+								position: relative;
+								margin-right: 30px;
+								&:first-child::after {
+												position: absolute;
+												content: '';
+												top: 0px;
+												left: -29px;
+												width: 22px;
+												height: 18px;
+												background-image: url(%=static=%/general/domsip-logo.png);
+												background-size: cover;
+								}
+								&::before {
+												position: absolute;
+												content: '';
+												top: 7px;
+												right: -15px;
+												width: 8px;
+												height: 8px;
+												border: 1px solid #777;
+												border-top: transparent;
+												border-left: transparent;
+												transform: rotate(-45deg);
+								}
+								&:last-child {
+												opacity: 0.5;
+												&::before {
+																display: none;
+												}
+												a:hover {
+																color: #888;
+																cursor: default;
+												}
+								}
+				}
+				&__link {
+								color: #888;
+								font-size: 18px;
+								text-decoration: none;
+								&:hover {
+												color: #000;
+								}
+				}
+}

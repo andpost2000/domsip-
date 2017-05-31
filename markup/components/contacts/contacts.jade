@@ -1,0 +1,25 @@
+mixin contacts(data)
+	+b.contacts(itemscope='', itemtype='http://schema.org/PostalAddress')
+		+e.SPAN.title Юридический адрес:
+		p(itemprop='streetAddress')
+			| ООО "Стильный дом",
+			br
+			|  211875 Беларусь, Витебская обл.,
+			br
+			|  г. Поставы, ул. Космонавтов д. 26 
+			sup В
+			br
+			span(itemprop='telephone') Тел/ф (02155) 4-25-80
+			br
+			span e-mail: 
+				a(href="mailto:stilndom@gmail.com") stilndom@gmail.com
+	+b.contacts
+		+e.SPAN.title Офис в Минске:
+		p
+			| ООО "Стильный дом",
+			br
+			|  220012 Беларусь, г. Минск,
+			br
+			| ул. Волгоградская, д. 8, ком. 29
+			br
+			span Тел/ф +375(17) 267-23-69

@@ -1,0 +1,15 @@
+mixin order-form(data)
+	+b.FORM.order-form(action='' method='post')
+		strong Выездной шиномонтаж 24/7
+		+e.inner
+			+e.FIELDSET.form-group._name
+				+e.INPUT.form-field(type='text' id='name' name='name' placeholder='Ваше имя')
+			+e.FIELDSET.form-group._phone
+				+e.INPUT.form-field(type='tel' id='phone' name='phone' placeholder='Ваш телефон')
+			+e.FIELDSET.form-group._address
+				+e.INPUT.form-field(type='text' id='address' name='address' placeholder='Ваше адрес')
+			+e.FIELDSET.form-group
+				+e.INPUT.form-field._date.btn(type='date' id='date' name='date' placeholder='Дата')
+				+e.INPUT.form-field._time.btn(type='text' id='time' name='time' placeholder='Время')
+			+e.BUTTON.submit(type='submit') заказать звонок
+			

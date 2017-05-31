@@ -1,0 +1,10 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Строим
+		+e.wrap
+			+col-left
+			+b.col-center
+			+col-right

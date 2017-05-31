@@ -1,0 +1,61 @@
+.goods-card {
+				position: relative;
+				width: 230px;
+				margin-bottom: 20px;
+				padding 2px 0
+				flex-basis: 230px;
+				font-family: $font-1;
+				background-color: #fafafa;
+				border: 1px solid rgba(0,0,0,.1);
+				border-radius: 3px;
+				overflow: hidden;
+				cursor: default;
+				transition: all .1s ease-in;
+				&:hover {
+								box-shadow: 0 10px 25px 0 rgba(0,0,0,.5);
+								border 1px solid rgba(0,0,0,0.01);
+				}
+				&:active {
+								box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+								border 1px solid rgba(0,0,0,.01);
+								opacity: 0.5;
+				}
+				a {
+					color: inherit;
+				}
+				sup {
+								font-size: 0.7em;
+				}
+				&__title {
+								margin: 0;
+								font-family $font
+								text-align: center;
+				}
+				&__subtitle {
+								margin: 0;
+								padding: 0 10px;
+								text-align: right;
+								font-weight: 700;
+								b {
+												font-size: 11px;
+								}
+				}
+				&__img {
+					display block
+					width 23rem
+					height 15rem
+				}
+				&__list {
+								margin: 5px;
+								flex-grow: 1;
+				}
+				&__item {
+								display: flex;
+								flex-wrap: wrap;
+								font-size 15px
+								line-height 19px
+								b {
+												margin-left: auto;
+								}
+				}
+}

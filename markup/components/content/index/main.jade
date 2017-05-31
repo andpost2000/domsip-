@@ -1,0 +1,14 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../slides/slides
+include ../../references/references
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Строим каркасные дома из СИП панелей в Беларуси
+		+e.wrap
+			+col-left
+			+b.col-center
+				+slides
+				+references
+			+col-right

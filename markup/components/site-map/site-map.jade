@@ -1,0 +1,22 @@
+mixin site-map(data)
+	+b.site-map
+		+e.UL.list
+			li
+				+e.A.title(href='index.html') Главная
+			+e.LI.item
+				a(href='price.html') Цены
+			+e.LI.item
+				a(href='aboutus.html') О нас
+			+e.LI.item
+				a(href='contacts.html') Контакты
+		ul.site-map__list
+			li
+				+e.A.title Каталог
+			+e.LI.item
+				a(href='projects.html') Проекты
+			+e.LI.item
+				a(href='sip.html') Сип панели
+			+e.LI.item
+				a(href='styrofoam.html') Пенопласт
+			+e.LI.item
+				a(href='aboutus.html') Всё для дома
