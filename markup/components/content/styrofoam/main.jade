@@ -1,0 +1,12 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../styrofoam/styrofoam
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Собственное производство пенопласта
+		+e.wrap
+			+col-left
+			+b.col-center
+				+styrofoam
+			+col-right

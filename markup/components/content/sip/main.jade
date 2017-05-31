@@ -1,0 +1,12 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../sip/sip
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Собственное производство СИП панелей
+		+e.wrap
+			+col-left
+			+b.col-center
+				+sip
+			+col-right
