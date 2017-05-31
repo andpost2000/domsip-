@@ -1,0 +1,20 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../allforhome/allforhome
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Кованные изделия для дома
+		+e.wrap
+			+col-left
+			+b.col-center
+				+b.breadcrumbs
+					+e.UL.list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+						+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+							+e.A.link(href='index.html', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+								span(itemprop='name') Главная
+						+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+							+e.A.link(href='#', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+								span(itemprop='name') Всё для дома
+				+allforhome
+			+col-right
