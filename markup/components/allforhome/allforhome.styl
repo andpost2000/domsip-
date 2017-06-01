@@ -14,22 +14,27 @@
 		border-radius: 4px;
 		background-color: #F9F5F0;
 	}
+	&__top-description {
+		padding 0px 40px 20px 40px
+		font-size 18px
+		text-indent 25px
+	}
 	&__item {
-	position: relative;
-	width: 300px;
-	margin-bottom: 20px;
-	background-color: #999;
-	border-radius: 3px;
-	overflow: hidden;
-	cursor: default;
-	transition: all .1s ease-in;
-	&:hover {
-		box-shadow: 0 6px 25px 0 rgba(0,0,0,.5);
-	}
-	&:active {
-		box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
-		opacity: 0.5;
-	}
+		position: relative;
+		width: 300px;
+		margin-bottom: 20px;
+		background-color: #999;
+		border-radius: 3px;
+		overflow: hidden;
+		cursor: default;
+		transition: all .1s ease-in;
+		&:hover {
+			box-shadow: 0 6px 25px 0 rgba(0,0,0,.5);
+		}
+		&:active {
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+			opacity: 0.5;
+		}
 	}
 	&__item-title {
 		margin: 5px 0;
@@ -44,12 +49,86 @@
 		height: 300px;
 		overflow: hidden;
 		background-color: #f5f5f5;
+		img {
+			position: relative;
+			display: block;
+			margin: auto;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
 	}
-	img {
+	&__card-title {
+		margin: 10px;
+		font-size: 18px;
+		text-align: center;
+	}
+	&__item-card {
 		position: relative;
-		display: block;
-		margin: auto;
-		top: 50%;
-		transform: translate(0, -50%);
+		margin-bottom: 20px;
+		width: 230px;
+		background-color: #eee;
+		border-radius: 3px;
+		overflow: hidden;
+		cursor: default;
+		box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
 	}
+	&__card-img {
+		position: relative;
+		width: 230px;
+		background-color: #fff;
+		cursor: pointer;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			display: none;
+			width: 100px;
+			height: 100px;
+			top: 20%;
+			left: 30%;
+			background-image: url(%=static=%/general/magnifier.png);
+			background-size: contain;
+		}
+		&:hover::after {
+			display: block;
+		}
+	}
+	&__card-bigimg {
+		position: fixed;
+		display: none;
+		max-width: 740px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1000;
+		border: 1000px solid rgba(0, 0, 0, 0.5);
+		&-close {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			top: -10px;
+			right: -55px;
+			font-size: 0;
+			vertical-align: bottom;
+			background-image: url(../img/icon/close.png);
+			cursor: pointer;
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	&__img.show>div {
+		display block
+	}
+	&__card-price {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px;
+		padding: 0 10px;
+		font-weight: 700;
+}
 }
