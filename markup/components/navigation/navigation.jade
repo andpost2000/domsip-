@@ -1,5 +1,7 @@
 mixin navigation(data)
 	+b.UL.navigation
+		+e.LI.item
+			a Главное меню
 		+e.LI.item._logo.on-page
 			a(href='index.html')
 				img(src='static/img/general/domsip-logo+.svg', width='45', height='45', alt='Стильный дом')
@@ -7,10 +9,10 @@ mixin navigation(data)
 		+e.LI.item._sub
 			a Каталог
 			+e.UL.item-sublist
-				+e.LI.item._subitem
-					a(href='styrofoam.html') Пенопласт
-				+e.LI.item._subitem
-					a(href='allforhome.html') Всё&nbsp;для&nbsp;дома
+				+e.LI.sub-item
+					+e.A.sub-link(href='styrofoam.html') Пенопласт
+				+e.LI.sub-item
+					+e.A.sub-link(href='allforhome.html') Всё&nbsp;для&nbsp;дома
 		+e.LI.item
 			a(href='projects.html') Проекты
 		+e.LI.item
@@ -21,3 +23,4 @@ mixin navigation(data)
 			a(href='aboutus.html') О нас
 		+e.LI.item
 			a(href='contacts.html') Контакты
+
