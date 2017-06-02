@@ -22,6 +22,15 @@ mixin aboutus(data)
 					li коттеджные поселки- Беларусь; Россия;
 					li таун-хаусы - Беларусь; Россия;
 					li надстройки- Беларусь; Россия;
-		+e.document
+		+e.documents
 			+e.H2.title 10 лет успешной работы!
-			img(src='static/img/general/svidetelstvo-m.jpg', width='700', alt='Свидетельство о регистрации')
+			+e.img.js_img-click
+				img(src='static/img/general/svidetelstvo-m.jpg', width='300', alt='Свидетельство о регистрации')
+				+e.big-img.js_img-big
+					+e.big-img-close.js_img-close Закрыть
+					img(src='static/img/general/svidetelstvo.jpg', alt='Свидетельство о регистрации')
+			+e.img.js_img-click
+				img(src='static/img/general/sertificat-m.jpg', width='300', alt='Свидетельство о регистрации')
+				+e.big-img.js_img-big
+					+e.big-img-close.js_img-close Закрыть
+					img(src='static/img/general/sertificat.jpg', alt='Свидетельство о регистрации')

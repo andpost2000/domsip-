@@ -73,56 +73,8 @@
 		box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
 	}
 	&__card-img {
-		position: relative;
 		width: 230px;
 		background-color: #fff;
-		cursor: pointer;
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-		&::after {
-			position: absolute;
-			content: '';
-			display: none;
-			width: 100px;
-			height: 100px;
-			top: 20%;
-			left: 30%;
-			background-image: url(%=static=%/general/magnifier.png);
-			background-size: contain;
-		}
-		&:hover::after {
-			display: block;
-		}
-	}
-	&__card-bigimg {
-		position: fixed;
-		display: none;
-		max-width: 740px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 1000;
-		border: 1000px solid rgba(0, 0, 0, 0.5);
-		&-close {
-			position: absolute;
-			width: 50px;
-			height: 50px;
-			top: -10px;
-			right: -55px;
-			font-size: 0;
-			vertical-align: bottom;
-			background-image: url(../img/icon/close.png);
-			cursor: pointer;
-			opacity: 0.8;
-			&:hover {
-				opacity: 1;
-			}
-		}
-	}
-	&__img.show>div {
-		display block
 	}
 	&__card-price {
 		display: flex;
@@ -130,5 +82,5 @@
 		margin: 10px;
 		padding: 0 10px;
 		font-weight: 700;
-}
+	}
 }

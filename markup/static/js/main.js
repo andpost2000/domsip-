@@ -1,4 +1,5 @@
-// import '../../components/reviews/slick.min';
+import '../../components/allforhome/allforhome';
+import '../../components/slides/slick';
+import '../../components/slides/slides';
 // $(() => {
-
-      // });
+// });
