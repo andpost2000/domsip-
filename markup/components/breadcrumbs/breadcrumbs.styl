@@ -34,6 +34,7 @@
 								}
 								&:last-child {
 												opacity: 0.5;
+												margin-right 0
 												&::before {
 																display: none;
 												}
@@ -50,5 +51,20 @@
 								&:hover {
 												color: #000;
 								}
+				}
+				+mob() {
+					&__item {
+						margin-right 14px
+						&:before {
+							width 5px
+							height 5px
+							top 8px
+							right -8px
+						}
+					}
+					&__link {
+						font-family $font
+						font-size 15px
+					}
 				}
 }

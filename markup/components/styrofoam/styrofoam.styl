@@ -1,27 +1,29 @@
-.styrofoam {
-				box-sizing: border-box;
-				padding: 0 10px;
-				padding-bottom: 20px;
-				background-color: #fff;
-				font-family: $font-1;
-				&__title {
-								font-size: 22px;
-								font-weight 700
-								margin: 10px 0;
-				}
-				&__item {
-								margin-bottom: 25px;
-				}
-				h3 {
-								margin-top: 20px;
-				}
-				i {
-								margin-left: 30px;
-				}
-				p {
-								text-indent: 25px;
-								margin-bottom 10px
-								text-align: justify;
-								font-size: 16px;
-				}
-}
+.styrofoam
+	box-sizing: border-box;
+	padding: 0 10px;
+	padding-bottom: 20px;
+	background-color: #fff;
+	font-family: $font-1;
+	&__title
+		font-size: 22px;
+		font-weight 700
+		margin: 10px 0;
+	&__item
+		margin-bottom: 25px;
+	h3
+		margin-top: 20px;
+	i
+		margin-left: 30px;
+	p
+		text-indent: 25px;
+		margin-bottom 10px
+		text-align: justify;
+		font-size: 16px;
+	+mob()
+		padding 0
+		&__title
+			padding 0 5px
+			font-size 20px
+		p
+			padding 0 5px
+			font-size 14px
