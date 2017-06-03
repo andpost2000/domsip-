@@ -1,58 +1,57 @@
-.slides {
-				position: relative;
-				height: 480px;
-				padding: 0 10px;
-				padding-top: 15px;
-				padding-bottom: 25px;
-				background-color: #fff;
-				border-radius: 3px;
-				overflow: hidden;
-				&__text {
-								position: absolute;
-								right: 10px;
-								color: #fff;
-								z-index: 5;
-				}
-				&__title {
-								width: 250px;
-								margin: 0;
-								text-align: center;
-								font-family: $font;
-								background-color: rgba(0, 0, 0, 0.5);
-								b {
-												display: block;
-												font-size: 32px;
-								}
-				}
-				&__btn {
-								display block
-								font-family: $font-1;
-								padding: 10px;
-								color: #fff;
-								text-transform: uppercase;
-								font-weight: 700;
-								text-align: center;
-								background-color: rgba(255, 0, 0, 0.65);
-								border: 2px solid #f00;
-								border-radius: 3px;
-								transition: all .1s ease;
-								opacity: 0;
-								&:hover {
-												background-color: #f00;
-								}
-				}
-				&:hover .slides__btn {
-								opacity: 1;
-				}
-				&__item {
-								display flex
-								background-color: #ddd;
-								width: 720px;
-								img {
-												height: 480px;
-								}
-				}
-}
-.slick-track {
+.slides 
+	position: relative;
+	height: 480px;
+	padding: 0 10px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	background-color: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	&__text 
+		position: absolute;
+		right: 10px;
+		color: #fff;
+		z-index: 5;
+	&__title 
+		width: 250px;
+		margin: 0;
+		text-align: center;
+		font-family: $font;
+		background-color: rgba(0, 0, 0, 0.5);
+		b 
+						display: block;
+						font-size: 32px;
+	&__btn 
+		display block
+		font-family: $font-1;
+		padding: 10px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		background-color: rgba(255, 0, 0, 0.65);
+		border: 2px solid #f00;
+		border-radius: 3px;
+		transition: all .1s ease;
+		opacity: 0;
+		&:hover 
+			background-color: #f00;
+	&:hover .slides__btn 
+		opacity: 1;
+	&__item 
+		display flex
+		background-color: #ddd;
+		width: 720px;
+		img 
+			height: 480px;
+	+mob() 
+		padding 10px 0
+		&__item
+			width 320px
+			height 208px
+		img
+			width 320px
+			height 208px
+.slick-track 
 	display flex
-}
+ 

@@ -1,11 +1,24 @@
 // File for vars.
-media_queries = {
-	mobile  : "(max-width: 32rem)",
-	tablet  : "(max-width: 1240px)",
-	desktop : "(max-width: 120rem)"
-}
 // For example: main colors, paddings and so on.
 $c_white = #fff
 $c_orange = #ffc107
 $c_dark = #424242
-$page-width = 1200px
+
+// $bp = {
+//   mob: 76.8rem,
+//   tab: 124rem
+// }
+// mq($point)
+//   @media (max-width: $bp[$point])
+//     {block}
+
+// breakpoints adaptiv
+$tab = 1240px
+$mob = 768px
+
+tab()
+  @media (max-width: $tab)
+    {block}
+mob()
+  @media (max-width: $mob)
+    {block}
