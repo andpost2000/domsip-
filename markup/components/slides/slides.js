@@ -1,3 +1,7 @@
+$('.navigation').click(function() {
+  $(this).toggleClass('navigation_show');
+});
+
 // slider function
 $(document).ready(function() {
   $('#slider').slick({

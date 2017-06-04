@@ -1,66 +1,80 @@
-.page-goods {
-				font-family: $font-1;
-				sup {
-								font-size: 0.6em;
-				}
-				&__title {
-								margin: 10px 0px;
-								margin-bottom: 12px;
-								padding: 5px 0;
-								padding-left: 30px;
-								flex-grow: 1;
-								text-transform: uppercase;
-								border-radius: 4px;
-								background-color: #F9F5F0;
-				}
-				&__img-wrap {
-								width: 768px;
-								height: 480px;
-								display: flex;
-								justify-content: center;
-								overflow: hidden;
-				}
-				&__preview {
-								display: flex;
-								justify-content space-between
-								flex-wrap: wrap;
-								margin-top: 10px;
-				}
-				&__preview-item {
-								display: flex;
-								width: 230px;
-								height: 150px;
-								padding: 5px;
-								justify-content: center;
-								overflow: hidden;
-				}
-				&__smallimage {
-								padding: 3px;
-								&:hover {
-												box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
-												cursor: pointer;
-								}
-				}
-				&__smallimage.active {
-								box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.5);
-								cursor: default;
-				}
-				&__features {
-								margin: 5px;
-								flex-grow: 1;
-				}
-				&__features-item {
-								display: flex;
-								flex-wrap: wrap;
-								border-bottom: 1px dashed #ddd;
-								span {
-												width: 180px;
-								}
-				}
-				&__description {
-								margin-top 20px
-								text-align: justify;
-								text-indent: 30px;
-				}
-}
-
+	.page-goods 
+	font-family: $font-1;
+	sup 
+		font-size: 0.6em;
+	&__title 
+		margin: 10px 0px;
+		margin-bottom: 12px;
+		padding: 5px 0;
+		padding-left: 30px;
+		flex-grow: 1;
+		text-transform: uppercase;
+		border-radius: 4px;
+		background-color: #F9F5F0;
+	&__img-wrap 
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+	&__img
+		width: 768px;
+		height: 480px;
+	&__preview 
+		display: flex;
+		justify-content space-between
+		flex-wrap: wrap;
+		margin-top: 10px;
+	&__preview-item 
+		display: flex;
+		width: 230px;
+		height: 150px;
+		padding: 5px;
+		justify-content: center;
+		overflow: hidden;
+	&__smallimage 
+		padding: 3px;
+		&:hover 
+						box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+						cursor: pointer;
+	&__smallimage.active 
+		box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.5);
+		cursor: default;
+	&__features 
+		margin: 5px;
+		flex-grow: 1;
+	&__features-item 
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px dashed #ddd;
+		span 
+			width: 180px;
+	&__description
+		margin-top 20px
+		text-align: justify;
+		text-indent: 30px;
+	+mob()
+		&__title
+			font-size 22px
+		&__img
+			width 360px
+			height 250px
+		&__preview 
+			padding 0 3px
+			margin-top: 2px;
+		&__preview-item 
+			width: 170px;
+			height: 110px;
+			padding: 2px;
+		&__smallimage 
+			padding: 1px;
+		&__features 
+			margin: 0 5px;
+			flex-grow: 1;
+			font-size 12px
+		&__features-item 
+			display: flex;
+			flex-wrap: wrap;
+			border-bottom: 1px dashed #ddd;
+			span 
+				width: 120px;
+		&__description
+			margin 10px 5px

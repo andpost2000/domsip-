@@ -1,12 +1,12 @@
 .slides 
 	position: relative;
-	height: 480px;
 	padding: 0 10px;
 	padding-top: 15px;
 	padding-bottom: 25px;
 	background-color: #fff;
 	border-radius: 3px;
 	overflow: hidden;
+	box-sizing border-box
 	&__text 
 		position: absolute;
 		right: 10px;
@@ -41,21 +41,15 @@
 	&__item 
 		display flex
 		background-color: #ddd;
-		width: 720px;
-		img 
-			height: 480px;
+		img
+			width 748px
+			height 100%
 	+mob() 
 		padding 10px 0
-		width 320px
-		height 208px
 		&__title
 			display none
 		&__item
-			width 320px
-			height 208px
-		img
-			width 320px
-			height 208px
+			img
+				width 360px
 .slick-track 
 	display flex
- 

@@ -114,6 +114,8 @@
 
 	+mob()
 		&__item
+			margin 0
+			box-shadow none
 			position absolute
 			width 100%
 			box-sizing border-box
@@ -121,3 +123,46 @@
 				position relative
 				display block
 				z-index 100
+		&__toggle
+			position: absolute;
+			right: 32px;
+			top: 5px;
+			width: 35px;
+			height: 35px;
+			overflow hidden
+			&:before
+				position absolute
+				content ''
+				width 35px
+				height 3px
+				top 16px
+				right 0px
+				background-color #000
+				box-shadow 0 6px  0 0px #000, 0 -6px  0 0px #000
+				transition: 0.3s ease-in-out
+	&_show
+		flex-direction column
+	&_show &__item
+			position relative
+		span
+			width 200px
+			padding 15px 0
+			font-size 24px
+			line-height 21px
+		img
+			margin-top 3px
+	&_show &__toggle
+		border solid 1px
+		&:before, &:after
+			position absolute
+			content ''
+			top -6px
+			right 15px
+			width: 3px;
+			height 45px
+			background-color: #000;
+		&:before 
+			transform: rotate(45deg);
+			box-shadow 0
+		&:after 
+			transform: rotate(-45deg);
