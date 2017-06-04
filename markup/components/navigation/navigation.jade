@@ -3,7 +3,7 @@ mixin navigation(data)
 		+e.LI.item._mobil
 			a Главное меню
 			+e.toggle
-		+e.LI.item._logo.on-page
+		+e.LI.item._logo
 			a(href='index.html')
 				img(src='static/img/general/domsip-logo+.svg', width='45', height='45', alt='Стильный дом')
 				span Стильный дом
@@ -11,13 +11,15 @@ mixin navigation(data)
 			a Каталог
 			+e.UL.item-sublist
 				+e.LI.sub-item
+					+e.A.sub-link(href='sip.html') Сип панели
+				+e.LI.sub-item
 					+e.A.sub-link(href='styrofoam.html') Пенопласт
 				+e.LI.sub-item
 					+e.A.sub-link(href='allforhome.html') Всё&nbsp;для&nbsp;дома
 		+e.LI.item
 			a(href='projects.html') Проекты
 		+e.LI.item
-			a(href='sip.html') Сип панели
+			a(href='creditovanie.html') Кредитование
 		+e.LI.item
 			a(href='price.html') Цены
 		+e.LI.item

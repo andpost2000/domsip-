@@ -2,8 +2,6 @@
 	position: relative
 	display: flex
 	flex-grow: 1
-	&__item.on-page 
-		background-color: #C1E558
 	&__item
 		position: relative
 		margin: 0 1px
@@ -30,6 +28,7 @@
 			display none
 		&_logo a
 			padding 0
+			background-color: #C1E558
 		&_logo img
 				display inline-block
 				vertical-align top
@@ -57,10 +56,6 @@
 			transform: translate(15px, 0px) scale(1, 1)
 			z-index: 10
 			cursor: default
-		&_subitem
-			margin 0
-			border-bottom-left-radius 0
-			border-bottom-right-radius 0
 		span 
 			display inline-block
 			vertical-align top
@@ -96,12 +91,13 @@
 			text-decoration: none;
 			text-transform: uppercase;
 
-
 	+tab()
 		font-size 18px
 		line-height 20px
 		&__item:nth-child(5)
 			display none
+		&__sub-item
+			width 230px
 		span
 			width 110px
 			padding 3px 0
@@ -111,8 +107,9 @@
 		img
 			margin-top 3px
 
-
 	+mob()
+		&__item:nth-child(5)
+			display block
 		&__item
 			margin 0
 			box-shadow none
@@ -123,6 +120,8 @@
 				position relative
 				display block
 				z-index 100
+		&__item.navigation_mobil
+			background-color: #E7FEFC
 		&__toggle
 			position: absolute;
 			right: 32px;
