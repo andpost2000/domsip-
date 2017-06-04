@@ -1,0 +1,12 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../credit/credit
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Условия кредитования на строительство
+		+e.wrap
+			+col-left
+			+b.col-center
+				+credit
+			+col-right
