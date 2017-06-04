@@ -5,11 +5,90 @@ include ../../references/references
 mixin main(data)
 	+b.MAIN.page-content
 		+e.title-wrap
-			+e.H1.title Строим каркасные дома из&nbsp;СИП панелей в Беларуси
+			+e.H1.title Строим каркасные дома из&nbsp;СИП&nbsp;панелей в Беларуси
 		+e.wrap
 			+col-left
 			+b.col-center
 				+slides
+				+b.goods
+					+e.H2.title
+						| Хиты продаж
+						sup
+					+b.goods-card
+						a(href='30.html')
+							+e.H2.title
+								| Дом 30 м
+								sup 2
+							+e.P.subtitle
+								| Комплектация "Премиум"
+								br
+								| 7 500 
+								b у.е.
+							+e.IMG.img(src='static/img/content/30/1c.jpg', alt='60')
+							+e.UL.list
+								+e.LI.item
+									span Общая площадь:
+									b
+										| 30 м
+										sup 2
+								+e.LI.item
+									span Площадь застройки:
+									b
+										| 50 м
+										sup 2
+								+e.LI.item
+									span Особенности:
+									b Терраса
+					+b.goods-card
+						a(href='105.html')
+							+e.H2.title
+								| Дом 105 м
+								sup 2
+							+e.P.subtitle
+								| Комплектация "Премиум"
+								br
+								| 25 000 
+								b у.е.
+							+e.IMG.img(src='static/img/content/105/1c.jpg', alt='66' )
+							+e.UL.list
+								+e.LI.item
+									span Общая площадь:
+									b
+										| 105 м
+										sup 2
+								+e.LI.item
+									span Площадь застройки:
+									b
+										| 150 м
+										sup 2
+								+e.LI.item
+									span Особенности:
+									b Терраса, камин
+					+b.goods-card
+						a(href='60.html')
+							+e.H2.title
+								| Дом 60 м
+								sup 2
+							+e.P.subtitle
+								| Комплектация "Премиум"
+								br
+								| 15 000 
+								b у.е.
+							+e.IMG.img(src='static/img/content/60/1c.jpg', alt='60')
+							+e.UL.list
+								+e.LI.item
+									span Общая площадь:
+									b
+										| 60 м
+										sup 2
+								+e.LI.item
+									span Площадь застройки:
+									b
+										| 40 м
+										sup 2
+								+e.LI.item
+									span Особенности:
+									b Балкон
 				+references
 				.video
 					iframe(width='748', height='431', src='https://www.youtube.com/embed/NIK68PQaozM', allowfullscreen='')

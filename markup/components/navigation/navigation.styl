@@ -92,24 +92,21 @@
 			text-transform: uppercase;
 
 	+tab()
-		font-size 18px
+		font-size 17px
 		line-height 20px
-		&__item:nth-child(5)
-			display none
 		&__sub-item
 			width 230px
-		span
-			width 110px
-			padding 3px 0
-			margin-left 0
-			font-size 20px
-			line-height 21px
-		img
-			margin-top 3px
+		&__item_logo
+			span
+				width 110px
+				padding 4px 0
+				margin-left 0
+				font-size 18px
+				line-height 21px
+			img
+				margin-top 3px
 
 	+mob()
-		&__item:nth-child(5)
-			display block
 		&__item
 			margin 0
 			box-shadow none
@@ -139,29 +136,29 @@
 				background-color #000
 				box-shadow 0 6px  0 0px #000, 0 -6px  0 0px #000
 				transition: 0.3s ease-in-out
-	&_show
-		flex-direction column
-	&_show &__item
-			position relative
-		span
-			width 200px
-			padding 15px 0
-			font-size 24px
-			line-height 21px
-		img
-			margin-top 3px
-	&_show &__toggle
-		border solid 1px
-		&:before, &:after
-			position absolute
-			content ''
-			top -6px
-			right 15px
-			width: 3px;
-			height 45px
-			background-color: #000;
-		&:before 
-			transform: rotate(45deg);
-			box-shadow 0
-		&:after 
-			transform: rotate(-45deg);
+		&_show
+			flex-direction column
+		&_show &__item
+				position relative
+			span
+				width 200px
+				padding 15px 0
+				font-size 24px
+				line-height 21px
+			img
+				margin-top 3px
+		&_show &__toggle
+			border solid 1px
+			&:before, &:after
+				position absolute
+				content ''
+				top -6px
+				right 15px
+				width: 3px;
+				height 45px
+				background-color: #000;
+			&:before 
+				transform: rotate(45deg);
+				box-shadow 0
+			&:after 
+				transform: rotate(-45deg);
