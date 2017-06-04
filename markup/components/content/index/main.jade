@@ -94,3 +94,40 @@ mixin main(data)
 					iframe(width='748', height='431', src='https://www.youtube.com/embed/NIK68PQaozM', allowfullscreen='')
 			+col-right
 		div#map
+	script.
+		var map;
+		function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+		center: {
+		lat: 54.616634,
+		lng: 26.878876
+		},
+		zoom: 8,
+		fullscreenControl: true
+		});
+		var iconBase = 'http://domsip.by/img/';
+		var icons = {
+		library: {
+		icon: iconBase + 'library_maps.png'
+		},
+		info: {
+		icon: iconBase + 'info-i_maps.png'
+		}
+		};
+		var features = [{
+		position: new google.maps.LatLng(53.930970, 27.624247),
+		type: 'library'
+		}, {
+		position: new google.maps.LatLng(55.116646, 26.878909),
+		type: 'info'
+		}];
+		// Create markers.
+		features.forEach(function(feature) {
+		var marker = new google.maps.Marker({
+		position: feature.position,
+		icon: icons[feature.type].icon,
+		map: map
+		});
+		});
+		}
+	script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6it32UAVnCDKxx98m9H6nHtpm0AkkhA&callback=initMap', async='', defer='')

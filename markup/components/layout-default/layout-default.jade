@@ -26,40 +26,64 @@ html(lang='ru' class='no-js' prefix="og: http://ogp.me/ns#")
 		//- Main scripts. You can replace it, but I recommend you to leave it here
 		script(src='%=static=%js/main%=hash=%%=min=%.js')
 
+		// google analitic
 		script.
-			var map;
-			function initMap() {
-			map = new google.maps.Map(document.getElementById('map'), {
-			center: {
-			lat: 54.616634,
-			lng: 26.878876
-			},
-			zoom: 8,
-			fullscreenControl: true
+			(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-98649270-1', 'auto');
+			ga('send', 'pageview');
+		// Yandex.Metrika counter
+		script(type='text/javascript').
+			(function(d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+			try {
+			w.yaCounter44555589 = new Ya.Metrika({
+			id: 44555589,
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true
 			});
-			var iconBase = 'http://domsip.by/img/';
-			var icons = {
-			library: {
-			icon: iconBase + 'library_maps.png'
-			},
-			info: {
-			icon: iconBase + 'info-i_maps.png'
-			}
+			} catch (e) {}
+			});
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function() {
+			n.parentNode.insertBefore(s, n);
 			};
-			var features = [{
-			position: new google.maps.LatLng(53.930970, 27.624247),
-			type: 'library'
-			}, {
-			position: new google.maps.LatLng(55.116646, 26.878909),
-			type: 'info'
-			}];
-			// Create markers.
-			features.forEach(function(feature) {
-			var marker = new google.maps.Marker({
-			position: feature.position,
-			icon: icons[feature.type].icon,
-			map: map
-			});
-			});
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+			f();
 			}
-		script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6it32UAVnCDKxx98m9H6nHtpm0AkkhA&callback=initMap', async='', defer='')
+			})(document, window, "yandex_metrika_callbacks");
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/44555589', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		// Социальные сети
+		script(type='application/ld+json').
+			{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "ООО СТИЛЬНЫЙ ДОМ",
+			"url": "http://domsip.by",
+			"logo": "http://domsip.by/img/domsip-logo+.png",
+			"sameAs": [
+			"https://vk.com/domizsip",
+			"https://www.instagram.com/ooostilnyidom/?hl=ru",
+			"https://ok.ru/group/53658897481807",
+			"https://www.youtube.com/channel/UCD1-L9AAFsdjms6ZjrWYoGQ"
+			]
+			}
