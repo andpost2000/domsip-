@@ -14,10 +14,11 @@
 	&__img-wrap 
 		display: flex;
 		justify-content: center;
+		width: 768px;
+		height: 433px;
 		overflow: hidden;
 	&__img
-		width: 768px;
-		height: 480px;
+		width 100%
 	&__preview 
 		display: flex;
 		justify-content space-between
@@ -25,12 +26,13 @@
 		margin-top: 10px;
 	&__preview-item 
 		display: flex;
-		width: 230px;
-		height: 150px;
+		width: 240px;
+		height: 135px;
 		padding: 5px;
 		justify-content: center;
 		overflow: hidden;
 	&__smallimage 
+		width 100%
 		padding: 3px;
 		&:hover 
 						box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
@@ -54,9 +56,12 @@
 	+mob()
 		&__title
 			font-size 22px
-		&__img
+			margin-bottom 0
+		&__img-wrap
 			width 360px
-			height 250px
+			height 203px
+		&__img
+			width 100%
 		&__preview 
 			padding 0 3px
 			margin-top: 2px;
