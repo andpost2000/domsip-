@@ -119,23 +119,23 @@
 				z-index 100
 		&__item.navigation_mobil
 			background-color: #E7FEFC
-		&__toggle
-			position: absolute;
-			right: 32px;
-			top: 5px;
-			width: 35px;
-			height: 35px;
-			overflow hidden
-			&:before
-				position absolute
-				content ''
-				width 35px
-				height 3px
-				top 16px
-				right 0px
-				background-color #000
-				box-shadow 0 6px  0 0px #000, 0 -6px  0 0px #000
-				transition: 0.3s ease-in-out
+		// &__toggle
+		// 	position: absolute;
+		// 	right: 32px;
+		// 	top: 5px;
+		// 	width: 35px;
+		// 	height: 35px;
+		// 	overflow hidden
+		// 	&:before
+		// 		position absolute
+		// 		content ''
+		// 		width 35px
+		// 		height 3px
+		// 		top 16px
+		// 		right 0px
+		// 		background-color #000
+		// 		box-shadow 0 6px  0 0px #000, 0 -6px  0 0px #000
+		// 		transition: 0.3s ease-in-out
 		&_show
 			flex-direction column
 		&_show &__item
@@ -147,18 +147,92 @@
 				line-height 21px
 			img
 				margin-top 3px
-		&_show &__toggle
-			border solid 1px
-			&:before, &:after
-				position absolute
-				content ''
-				top -6px
-				right 15px
-				width: 3px;
-				height 45px
-				background-color: #000;
-			&:before 
-				transform: rotate(45deg);
-				box-shadow 0
-			&:after 
-				transform: rotate(-45deg);
+		// &_show &__toggle
+		// 	border solid 1px
+		// 	&:before, &:after
+		// 		position absolute
+		// 		content ''
+		// 		top -6px
+		// 		right 15px
+		// 		width: 3px;
+		// 		height 45px
+		// 		background-color: #000;
+		// 	&:before 
+		// 		transform: rotate(45deg);
+		// 		box-shadow 0
+		// 	&:after 
+		// 		transform: rotate(-45deg);
+
+
+.navigation__toggle {
+			position: absolute;
+			right: 25px;
+			top: 1px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.burger {
+  width: 30px;
+  height: 5px;
+  background: black;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 auto;
+  top: 20px;
+    transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+  transform-origin: 100% 0%;
+  &:before {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: black;
+    position: relative;
+    display: block;
+    top: -10px;
+     border-radius: 5px;
+        transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+  }
+  &:after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: black;
+    position: relative;
+    display: block;
+    top: 5px;
+    border-radius: 5px ;
+        transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+  }
+}
+
+.burger.active {
+  transform: scale(1.5);
+  border-radius: 200%;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: 4px solid transparent;
+  transform-origin: 50% 0%;
+  top: -10px;
+  padding-top: 14px;
+  padding-left: 3px;
+  transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+
+  &:before {
+    transform: rotate(45deg) scale(.8);
+    transform-origin: 45% 9%;
+    top: 0;
+    opacity: 1;
+    transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+  }
+  &:after {
+    transform: rotate(-45deg) scale(.8);
+    transform-origin: 25% 0%;
+    top: 0;
+    opacity: 1;
+    transition: .3s all cubic-bezier(.17,.67,.1,1.23);
+
+  }
+}

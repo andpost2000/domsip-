@@ -1,0 +1,36 @@
+1. Переименовать файлы
+
+		project.html
+		projects.html
+		start.txt
+
+
+
+
+2. Добавить в начало документа project.php
+
+		<?php
+			require_once "start.php";
+			$article = getArticle($_GET["id"]);
+			$id = $article["id"];
+			$total_area = $article["total_area"];
+			$price = $article["price"];
+			$building_area = $article["building_area"];
+			$floors = $article["floors"];
+			$garage = $article["garage"];
+			$features =  $article["features"];
+			$full_description = $article["full_description"];
+		?>
+
+
+		2.1 Обернуть <> ?php echo $id;? в тегах title description 
+
+
+
+
+3. Проверить наличие файлов в папке static
+
+		articles.php
+		full_article.php
+		functions.php
+		intro_article.php

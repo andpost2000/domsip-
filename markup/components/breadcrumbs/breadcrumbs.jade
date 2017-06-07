@@ -4,6 +4,8 @@ mixin breadcrumbs(data)
 			+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
 				+e.A.link(href='index.html', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
 					span(itemprop='name') Главная
+				meta(itemprop="position" content="1")
 			+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
-				+e.A.link(href='projects.html', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+				+e.A.link(href='projects.php', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
 					span(itemprop='name') Проекты
+				meta(itemprop="position" content="2")

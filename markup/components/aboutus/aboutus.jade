@@ -24,13 +24,19 @@ mixin aboutus(data)
 					li надстройки- Беларусь; Россия;
 		+e.documents
 			+e.H2.title 10 лет успешной работы!
-			+e.img.js_img-click
-				img(src='static/img/general/svidetelstvo-m.jpg', width='300', alt='Свидетельство о регистрации')
-				+e.big-img.js_img-big
-					+e.big-img-close.js_img-close Закрыть
-					img(src='static/img/general/svidetelstvo.jpg', alt='Свидетельство о регистрации')
-			+e.img.js_img-click
-				img(src='static/img/general/sertificat-m.jpg', width='300', alt='Свидетельство о регистрации')
-				+e.big-img.js_img-big
-					+e.big-img-close.js_img-close Закрыть
-					img(src='static/img/general/sertificat.jpg', alt='Свидетельство о регистрации')
+			+e.img-wrap
+				strong
+					| Свидетельство о регистрации
+				+e.img.js_img-click
+					img(src='static/img/general/svidetelstvo-m.jpg', alt='Свидетельство о регистрации')
+					+e.big-img.js_img-big
+						+e.big-img-close.js_img-close Закрыть
+						img(src='static/img/general/svidetelstvo.jpg', alt='Свидетельство о регистрации')
+			+e.img-wrap
+				strong
+					| Протокол испытаний
+				+e.img.js_img-click
+					img(src='http://placehold.it/300x437', alt='Протокол испытаний')
+					+e.big-img.js_img-big
+						+e.big-img-close.js_img-close Закрыть
+						img(src='static/img/general/22.jpg', alt='Протокол испытаний')

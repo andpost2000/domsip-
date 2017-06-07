@@ -3,6 +3,8 @@ mixin navigation(data)
 		+e.LI.item._mobil
 			a Главное меню
 			+e.toggle
+				+b.burger
+					+b.span
 		+e.LI.item._logo
 			a(href='index.html')
 				img(src='static/img/general/domsip-logo+.svg', width='45', height='45', alt='Стильный дом')
@@ -17,7 +19,7 @@ mixin navigation(data)
 				+e.LI.sub-item
 					+e.A.sub-link(href='allforhome.html') Всё&nbsp;для&nbsp;дома
 		+e.LI.item
-			a(href='projects.html') Проекты
+			a(href='projects.php') Проекты
 		+e.LI.item
 			a(href='credit.html') Кредит
 		+e.LI.item

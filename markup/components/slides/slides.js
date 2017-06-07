@@ -1,7 +1,7 @@
 $('.navigation').click(function() {
   $(this).toggleClass('navigation_show');
+  $('.burger').toggleClass("active");
 });
-
 // slider function
 $(document).ready(function() {
   $('#slider').slick({

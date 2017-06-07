@@ -4,9 +4,10 @@ include ../components/footer/footer
 include ../components/content/project/main
 
 block head
-	- var pageTitle = 'Проект номер:  - ООО "Стильный Дом"';
-	- var pageDescription = 'Красивые проекты каркасных домов, котеджей и дачных домиков';
+	- var pageTitle = 'Проект номер: ?php echo $id;? - ООО "Стильный Дом"';
+	- var pageDescription = 'Красивые проекты каркасных домов, котеджей и дачных домиков. Проект номер: ?php echo $id;?';
 	- var pageKeywords = 'Проекты домов, проекты каркавсных домов, каркасныые дома, дачные домики';
+	//Добавить <> в title и description
 block content
 	+header
 	+main
