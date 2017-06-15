@@ -26,6 +26,8 @@ ul,li,p,h1,h2,h3
 	margin 0 auto
 	box-shadow 0px 0 10px 10px rgba(34, 34, 34, 0.3)
 	background-color #fff
+	+tab-big()
+		width 1004px
 	+tab()
 		width 768px
 	+mob()
@@ -66,6 +68,13 @@ ul,li,p,h1,h2,h3
 		top: 47%;
 		right: -20px;
 		background-color: #000;
+	+tab-big()
+		padding 15px 75px
+		font-size 25px
+		&:before 
+			width 75px
+		&:after 
+			width 75px
 	+tab()
 		padding 15px 50px
 		font-size 25px

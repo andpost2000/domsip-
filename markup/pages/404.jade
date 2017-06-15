@@ -1,0 +1,13 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/footer/footer
+include ../components/content/404/main
+
+block head
+	- var pageTitle = 'Страница устарела или отсутствует';
+	- var pageDescription = 'Страница устарела или отсутствует';
+	- var pageKeywords = 'Страница устарела или отсутствует';
+block content
+	+header
+	+main
+	+footer

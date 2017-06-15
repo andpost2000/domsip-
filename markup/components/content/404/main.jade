@@ -1,0 +1,18 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Страница на реконструкции, устарела или отсутствует
+		+e.wrap
+			+col-left
+			+b.col-center
+				+b.reference
+					+e.item
+						+e.title Перейдите на 
+							a(href='index.html')
+								| главную страницу
+						picture
+							source(media='(max-width: 767px)', srcset='static/img/general/repair.png')
+							img(src='static/img/general/repair.png', alt='repair')
+			+col-right

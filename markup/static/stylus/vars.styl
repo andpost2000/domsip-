@@ -13,9 +13,13 @@ $c_dark = #424242
 //     {block}
 
 // breakpoints adaptiv
-$tab = 1240px
+$tab-big = 1260px
+$tab = 1023px
 $mob = 767px
 
+tab-big()
+  @media (max-width: $tab-big)
+    {block}
 tab()
   @media (max-width: $tab)
     {block}

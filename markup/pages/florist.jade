@@ -1,0 +1,13 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/footer/footer
+include ../components/content/florist/main
+
+block head
+	- var pageTitle = 'Кованные элементы декора для дома - ООО "Стильный Дом"';
+	- var pageDescription = 'Эксклюзивные предметы ручной работы. Элементы декора.';
+	- var pageKeywords = 'Кованные элементы декора';
+block content
+	+header
+	+main
+	+footer

@@ -1,3 +1,30 @@
+ErrorDocument 404 /404.html
+
+FileETag MTime Size
+
+# BEGIN Expire headers
+<ifModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 5 seconds"
+</ifModule>
+# END Expire headers
+
+# BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+    <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+	Header set Cache-Control "max-age=300"
+    </filesMatch>
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "public"
+    </filesMatch>
+    <filesMatch "\.(js)$">
+        Header set Cache-Control "private"
+    </filesMatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "private, must-revalidate"
+    </filesMatch>
+</ifModule>
+# END Cache-Control Headers
 <ifModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </ifModule>
@@ -11,3 +38,6 @@
     mod_gzip_item_exclude mime		^image\.*
     mod_gzip_item_exclude rspheader	^Content-Encoding:.*gzip.*
 </IfModule>
+
+#RemoveHandler .php .htm .html
+#AddHandler application/x-httpd-php .php .htm .html
