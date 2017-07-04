@@ -4,11 +4,35 @@ mixin news-aside(data)
 			| Наши новости
 		+e.P.new
 			strong
+				| Кридитование:
+			| Снижены ставки по кредитам! Тепрь от 13% годовых.
+			a(href="credit.html")
+				| подробнее
+			+e.SPAN.date
+				| 30-06-2017
+		+e.P.new
+			strong
+				| Новые проекты:
+			| Добавлены три новых проекта домов из СИП.
+			a(href="projects.php")
+				| подробнее
+			+e.SPAN.date
+				| 26-06-2017
+		+e.P.new
+			strong
+				| Новые проекты:
+			| Добавлены три новых проекта домов из СИП.
+			a(href="projects.php")
+				| подробнее
+			+e.SPAN.date
+				| 16-06-2017
+		+e.P.new
+			strong
 				| Элементы декора:
 			| Добавлен раздел с кованными цветочницами.
 			a(href="florist.html")
 				| подробнее
-			time
+			+e.SPAN.date
 				| 15-06-2017
 		+e.P.new
 			strong
@@ -16,7 +40,7 @@ mixin news-aside(data)
 			| Добавлены три новых проекта домов из СИП.
 			a(href="projects.php")
 				| подробнее
-			time
+			+e.SPAN.date
 				| 11-06-2017
 		+e.P.new
 			strong
@@ -24,7 +48,7 @@ mixin news-aside(data)
 			| В каталог добавлены цены для ознакомления со стоимостью работ.
 			a(href="allforhome.html")
 				| подробнее
-			time
+			+e.SPAN.date
 				| 10-06-2017
 		+e.P.new
 			strong
@@ -32,13 +56,5 @@ mixin news-aside(data)
 			| Строим в кредит на условиях ОАО "Белагропромбанк"!
 			a(href="credit.html")
 				| подробнее
-			time
+			+e.SPAN.date
 				| 07-06-2017
-		+e.P.new
-			strong
-				| Новый проект:
-			| Добавлен новый проект дома с мансардой и балконом. Цена очень демократичная.
-			a(href="project.php?id=9")
-				| подробнее
-			time
-				| 06-06-2017

@@ -1,0 +1,31 @@
+ErrorDocument 404 https://domsip.by/404.html
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.domsip.by$ [NC]
+RewriteRule ^(.*)$ https://domsip.by/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} =off 
+
+RewriteCond %{REQUEST_URI} !^/robots.txt$
+RewriteCond %{REQUEST_URI} !^/sitemap.xml$
+
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
+
+#
+
+
+FileETag MTime Size
+
+# BEGIN Expire headers
+<ifModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 86400 seconds"
+
+</ifModule>
+# END Expire headers
+
+<ifModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>

@@ -1,7 +1,7 @@
 mixin site-map(data)
 	+b.site-map
 		+e.UL.list
-			li
+			+e.LI.item-title
 				+e.A.title(href='index.html') Главная
 			+e.LI.item
 				a(href='price.html') Цены
@@ -11,8 +11,8 @@ mixin site-map(data)
 				a(href='aboutus.html') О нас
 			+e.LI.item
 				a(href='contacts.html') Контакты
-		ul.site-map__list
-			li
+		+e.UL.list
+			+e.LI.item-title
 				+e.A.title Каталог
 			+e.LI.item
 				a(href='projects.php') Проекты
