@@ -1,29 +1,54 @@
 .advantages
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding 20px 0
 	&__title
-		font-size 2.4rem
-		line-height 7.2rem
-		font-weight 400
-		color $c_white
+		margin: 10px 8px;
+		margin-bottom 30px
+		padding: 5px 0;
+		padding-left: 30px;
+		width: 100%;
+		font-size 24px
+		text-transform: uppercase;
+		border-radius: 4px;
+		background-color: #F9F5F0;
 	&__list
 		display flex
+		justify-content space-between
+		+mob()
+			flex-wrap wrap
+			justify-content center
 	&__item
-		width 190px
-		padding-top 80px
+		width 33%
 		display flex
 		flex-wrap wrap
 		justify-content center
+		&:not(:last-child)
+			border-right 1px solid rgba(0,0,0,0.2)
+			+mob()
+				margin-bottom 20px
+				padding-bottom 20px
+				border-right 0
+				border-bottom 1px solid rgba(0,0,0,0.2)
+		+mob()
+			width 305px
 		strong
+			display block
+			padding 0 20px
 			margin-bottom 10px
 			text-align center
-			font-size 1.6rem
-			line-height 2.4rem
-			font-weight 500
-			color $c_orange
+			font-size 20px
+			line-height 24px
+			font-weight 700
+			color #2196f3
+			text-transform uppercase
 		span
 			margin 0 20px
 			text-align center
-			font-size 1.4rem
-			line-height 2.1rem
-			font-weight 300
-			color $c_white
+			font-family $font-1
+			font-size 15px
+			line-height 21px
+			font-weight 400
+			color #000
 

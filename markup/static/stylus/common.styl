@@ -4,6 +4,9 @@ html
 *, *:before, *:after
 	box-sizing inherit
 body
+	display -webkit-flex
+	display -ms-flex
+	display flex
 	position relative
 	font-family $font
 	font-size 1.6rem
@@ -15,10 +18,6 @@ ul
 ul,li,p,h1,h2,h3
 	margin 0
 	padding 0
-.page
-	display -webkit-flex
-	display -ms-flex
-	display flex
 .page__inner
 	display: flex
 	flex-wrap wrap
@@ -31,18 +30,21 @@ ul,li,p,h1,h2,h3
 	+tab()
 		width 768px
 	+mob()
-		width 360px
+		min-width 360px
 .page-content__wrap
 	display flex
 	flex-wrap wrap
 .page-content
 	+mob()
-		width 360px
+		min-width 360px
+
 
 .page-content__title-wrap 
 	display flex
 	justify-content center
 	background-color #F9F5F0
+	+mob()
+		width 100%
 
 .page-content__title 
 	padding: 15px 150px;
@@ -84,6 +86,7 @@ ul,li,p,h1,h2,h3
 		&:after 
 			width 50px
 	+mob()
+		width 100%
 		margin-top 70px
 		padding 5px
 		font-size 23px

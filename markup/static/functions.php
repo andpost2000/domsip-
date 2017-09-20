@@ -15,7 +15,7 @@ if ($mysqli->connect_errno) {
 			function getAllArticles() {
 				global $mysqli;
 				connectDB();
-				$result_set = $mysqli->query("SELECT * FROM `projects`");
+				$result_set = $mysqli->query("SELECT * FROM `projects` ORDER BY id DESC LIMIT 0,27");
 				closeDB();
 				return resultSetToArray($result_set);
 			}

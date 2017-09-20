@@ -24,7 +24,38 @@
 
 		2.1 Обернуть <> ?php echo $id;? в тегах title description 
 
+2.2 файл projects.php
 
+<?php 
+require_once "start.php";
+
+				$pageA = $_GET["id"];
+				if($pageA == 1){
+					$activepage1 = 'active';
+				}elseif($pageA == 2){
+					$activepage2 = 'active';
+				}elseif($pageA == 3){
+					$activepage3 = 'active';
+				}else{
+					$activepage1 = 'active';
+				}
+
+?>
+вставить в блок goods
+
+					<h2 class="goods__title">Проекты домов<sup></sup>
+					</h2>
+					<div class="pagination">
+						<a href="projects.php?id=1" class="pagination__item" value="<?php echo $activepage1; ?>">1</a>
+						<a href="projects.php?id=2" class="pagination__item" value="<?php echo $activepage2; ?>">2</a>
+						<a href="projects.php?id=3" class="pagination__item" value="<?php echo $activepage3; ?>">3</a>
+					</div>
+					<?php require_once "static/articles.php" ?>
+					<div class="pagination">
+						<a href="projects.php?id=1" class="pagination__item" value="<?php echo $activepage1; ?>">1</a>
+						<a href="projects.php?id=2" class="pagination__item" value="<?php echo $activepage2; ?>">2</a>
+						<a href="projects.php?id=3" class="pagination__item" value="<?php echo $activepage3; ?>">3</a>
+					</div>
 
 
 3. Проверить наличие файлов в папке static

@@ -1,7 +1,10 @@
 include ../goods-card/goods-card
+include ../pagination/pagination
 mixin goods(data)
 	+b.goods
 		+e.H2.title
-			| Проекты домов 
+			| Проекты домов - страница №<?php echo $id; ?>
 			sup
+		+pagination
 		+goods-card
+		+pagination

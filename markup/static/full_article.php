@@ -33,7 +33,7 @@
                 </li>
                 <li class="page-goods__features-item"><span>Особенности:</span><b><?php echo $features;?></b>
                 </li>
-                <li class="page-goods__features-item"><span>Стоимость:</span><b><?php echo $price;?> y.e. Комплектация "Премиум" *</b>
+                <li class="page-goods__features-item"><span>Стоимость:</span><b><?php echo $price;?> BYN Комплектация "Премиум" *</b>
                 </li>
                 <li class="page-goods__features-item"><span>Номер проекта:</span><b><?php echo $id;?></b>
                 </li>

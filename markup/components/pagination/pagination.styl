@@ -1,0 +1,30 @@
+.pagination
+	display flex
+	justify-content center
+	width 100%
+	&__item
+		display block
+		margin 0 5px 10px 5px
+		width 40px
+		height 35px
+		text-align center
+		color #333
+		font-family $font-2
+		line-height 35px
+		border 1px solid
+		border-radius 3px
+		opacity 0.6
+		background-color #f9f5f0
+		box-shadow 0px 3px 7px -2px #888
+		&:hover
+			opacity 1
+		&:active
+			box-shadow 0px 0px 0px -2px #888
+			opacity 0.75
+	a[value="active"]
+		color #111
+		box-shadow 0px 0px 0px 0px #888
+		background-image: linear-gradient(#f9f5f0, #f9f5f0 90%, #ff0000 90%, #ff0000);
+		&:hover
+			opacity 0.7
+			cursor default

@@ -1,4 +1,3 @@
-psd
 node_modules
 dev
 builds
@@ -7,13 +6,13 @@ builds
 
 .tmpTemplater
 .tmpPreproc
- 
 
 .idea
 npm-debug.log
 debug.log
 phantomjsdriver.log
 /nbproject/*
+package-lock.json
 
 **/sprite_96.*
 **/svg-fallback-sprite.*

@@ -2,6 +2,8 @@
 	position: relative
 	display: flex
 	flex-grow: 1
+	+mob()
+		width 100%
 	&__item
 		position: relative
 		margin: 0 1px
@@ -50,6 +52,17 @@
 				width: 70%
 				height: 10px
 				top: -7px
+		&_sub:before
+			position absolute
+			content ''
+			right 12px
+			top 17px
+			border: 10px solid transparent;
+			border-top: 15px solid #000;
+			display: block;
+			width: 0;
+			height: 0;
+			opacity 0.5
 		&_sub:hover &-sublist
 			top: 55px
 			opacity: 1
@@ -68,6 +81,7 @@
 		border-top: 1px solid rgba(186, 163, 96, 0.7);
 		background-color: #E7FEFC;
 		box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.3);
+		cursor: default;
 		&:last-child 
 				border-bottom: 1px solid rgba(186, 163, 96, 0.7);
 				border-bottom-right-radius: 5px;
@@ -90,10 +104,22 @@
 			text-align: center;
 			text-decoration: none;
 			text-transform: uppercase;
-
+	+tab-big()
+		&__item
+			&_sub:before
+				right 22px
+				top 37px
+				border: 40px solid transparent;
+				border-top: 10px solid #000;
 	+tab()
 		font-size 17px
 		line-height 20px
+		&__item
+			&_sub:before
+				right 12px
+				top 37px
+				border: 40px solid transparent;
+				border-top: 10px solid #000;
 		&__sub-item
 			width 230px
 		&__item_logo
@@ -118,7 +144,7 @@
 			box-sizing border-box
 			&_mobil
 				position absolute
-				width 360px
+				width 100%
 				display block
 				z-index 100
 		&__item.navigation_mobil
