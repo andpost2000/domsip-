@@ -2,10 +2,6 @@ $('.navigation__item_mobil').click(function() {
   $('.navigation').toggleClass('navigation_show');
   $('.burger').toggleClass("active");
 });
-// $('.navigation').click(function() {
-//   $(this).toggleClass('navigation_show');
-//   $('.burger').toggleClass("active");
-// });
 
 // slider function
 $(document).ready(function() {

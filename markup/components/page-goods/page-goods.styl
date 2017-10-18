@@ -11,6 +11,8 @@
 		text-transform: uppercase;
 		border-radius: 4px;
 		background-color: #F9F5F0;
+		+mob()
+			font-size: 16px;
 	&__img-wrap 
 		display: flex;
 		justify-content: center;
@@ -58,16 +60,17 @@
 			font-size 22px
 			margin-bottom 0
 		&__img-wrap
-			width 360px
-			height 203px
+			width 97vw
+			height 70vw
 		&__img
 			width 100%
 		&__preview 
 			padding 0 3px
 			margin-top: 2px;
 		&__preview-item 
-			width: 170px;
-			height: 110px;
+			width: 30vw;
+			flex-basis: 30vw
+			height: 20vw;
 			padding: 2px;
 		&__smallimage 
 			padding: 1px;
