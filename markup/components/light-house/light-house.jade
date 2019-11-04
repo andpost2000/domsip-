@@ -1,0 +1,173 @@
+mixin light-house(data)
+	+b.light-house
+		+e.H3.sub-title Кредитование на покупку жилья
+		+e.P.text Первоначальныый взнос 10%.
+		+e.P.text Срок пользования кредитом 20 лет. "Ставка рефинансирования НБ РБ" + 5.4%.
+		+e.P.text "Беларусьбанк" - 
+				+e.A.link(href="https://belarusbank.by/ru/fizicheskim_licam/kredit/financing/kredit_na_zhilye_doma_i_kvartiry" target='_blank') подробнее
+		+e.P.text "Белагропромбанк" - 
+				+e.A.link(href="https://www.belapb.by/rus/natural/credits/property/house_purchase/" target='_blank') подробнее
+		+e.H3.sub-title Проект «Светлый дом»
+		+e.P.text Это экологически чистое жилье, построенное на основе каркаса из бруса  и  SIP панелей со сроком службы более 50 лет.
+		+e.P.text Высокое сопротивление теплопередаче материалов конструкции дома позволяет  без больших затрат применять автоматизированную  систему современного электрического отопления дома . 
+		+e.video
+			iframe(width="748" height="500" src="https://www.youtube.com/embed/9uYIWdOSvbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen)
+		+e.H3.sub-title Современный коттеджный поселок в 25 км от Минска.
+		+e.map
+			script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4586faba21703c3cc4c27b5624d4a25776387deb146c4d7e71a15ee96a0e068d&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true')
+		+e.H3.sub-title Рядом  с поселком «Светлый дом» (не далее 30  км) расположены лучшие места активного отдыха  Беларуси.
+		+e.UL.list
+			+e.LI.item Горнолыжный спортивно-оздоровительный комплекс Логойск
+			+e.LI.item Республиканский горнолыжный центр «Силичи»
+			+e.LI.item Республиканский центр олимпийской подготовки по зимним видам спорта «Раубичи»
+			+e.LI.item Минское море
+			+e.LI.item Река «Вяча»
+		+e.img-wrap
+			img(src='static/img/general/minsk-more.jpg', alt='отдых')
+			img(src='static/img/general/silichi.jpg', alt='отдых')
+		+e.H3.sub-title Комуникации и отопление
+		+e.UL.list
+			+e.LI.item Месячное потребление электричества на обогрев дома в зимний период составляет примерно 100 кВт/ч.
+			+e.LI.item Каждый дом оборудован системами вентиляции, водоснабжения и канализации.
+			+e.LI.item Стандартный  дом имеет площадь 100 кв.м. и прилегающий земельный участок в 10-12 соток.
+		+e.H3.sub-title Безопасность
+		+e.P.text В целях обеспечения безопасности заключены договоры на охрану домов с Департаментом охраны Министерства внутренних дел республики Беларусь
+		+e.P.text Поселок находится в зоне  обслуживания региональной службы  МЧС и Скорой  медицинской помощи
+				+e.img-wrap--flex.services
+					img(src='static/img/general/mvd.jpg', alt='мвд')
+					img(src='static/img/general/mchs.jpg', alt='мчс')
+		+e.H3.sub-title План дома
+		+e.P.text Стандартный одноэтажный дом состоит из просторной кухни, совмещенной с  гостиной, 2-х спален и совмещенного санузла.
+				+e.img-wrap
+					img(src='static/img/general/plan.jpg', alt='plan')
+		+e.H3.sub-title Фото галерея
+		+e.P.text Все дома реализуются c полной отделкой и готовы к заселению.
+		+b.gallery-slider
+			+e.images
+				+e.wrap
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image01.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image02.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image03.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image04.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image05.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image06.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image07.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image08.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image09.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image10.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image11.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image12.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image13.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image14.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image15.jpg')
+				+b.BUTTON.prev-arrow.slick-arrow
+					SVG(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1792")
+						PATH(fill="#fff" d="M1171 301L640 832l531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19L173 877q-19-19-19-45t19-45L915 45q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z")
+				+b.BUTTON.next-arrow.slick-arrow
+					SVG(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1792")
+						PATH(fill="#fff" d="M1107 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L275 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z")
+			+e.thumbnails
+				+e.wrap
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image01.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image02.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image03.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image04.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image05.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image06.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image07.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image08.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image09.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image10.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image11.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image12.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image13.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image14.jpg')
+					+b.item
+						+b.img-fill
+							img(src='static/img/general/gallery/image15.jpg')
+				+b.BUTTON.prev-arrow.slick-arrow
+					SVG(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1792")
+						PATH(fill="#fff" d="M1171 301L640 832l531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19L173 877q-19-19-19-45t19-45L915 45q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z")
+				+b.BUTTON.next-arrow.slick-arrow
+					SVG(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1792")
+						PATH(fill="#fff" d="M1107 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L275 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z")
+
+		+e.H3.sub-title Все дома проекта сконструированы по технологии  «Умный&nbsp;дом».
+		+e.UL.list
+			+e.LI.item Технология «умный дом» позволяет программировать и удаленно управлять включением и выключением всех электроприборов дома. 
+				+e.img-wrap--flex.smart
+					img(src='static/img/general/smart1.jpg', alt='smart')
+					img(src='static/img/general/smart3.jpg', alt='smart3')
+					img(src='static/img/general/smart2.jpg', alt='smart2')
+			+e.LI.item Технология «Умный дом» ярче всего проявляет себя в управлении освещением и отоплением.
+			+e.LI.item Управлять домом можно также через WEB интерфейс и в версиях приложения  для ПК и планшетов
+				+e.img-wrap
+					img(src='static/img/general/smart-pc.jpg', alt='smart-pc')
+			+e.LI.item Дополнительным плюсом является плоская эксплуатируемая кровля дома, пригодная для размещения летних террас.
+				+e.img-wrap
+					img(src='static/img/general/', alt='')
+		+e.P.text Дома построены и полностью готовы к заселению.
+		+e.H3.sub-title Выбери свой «Светлый&nbsp;дом» сегодня.
+		+e.P.text e-mail:
+			+e.A.link-mail(href="mailto:raimark@tut.by") raimark@tut.by
+			+e.A.link-tel(href="tel:+375296945552")
+				span тел. 
+				| +375 29 694 55 52

@@ -1,13 +1,11 @@
 .slides 
 	position: relative;
 	width 748px
-	// height 450px
 	padding: 0 10px;
 	padding-top: 15px;
 	background-color: #fff;
 	border-radius: 3px;
-	overflow: hidden;
-	&__text 
+	&__text
 		position: absolute;
 		right: 10px;
 		color: #fff;
@@ -37,7 +35,7 @@
 		&:hover 
 			background-color: #f00;
 		+mob()
-			display none
+			// display none
 	&:hover .slides__btn 
 		opacity: 1;
 	&__item 
@@ -48,15 +46,58 @@
 		img
 			width 100%
 			height 100%
+		&--video
+			overflow hidden
+			position relative
+			height 425px
+			iframe,
+			>div
+				height 100%
+				width 100%
+			img
+				position absolute
+				top 50%
+				transform translateY(-50%)
+				height auto
+				width 100%
+				cursor pointer
+				-webkit-filter brightness(75%)
+			.play
+				content ''
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				height auto
+				width 72px
+				height 72px
+				background-image url('%=static=%/general/play.png')
+				cursor pointer
 	+mob() 
 		width 100%
 		// height 216px
 		padding 10px 0
 		padding-bottom 30px
+		margin-bottom 25px
+		&__text {
+			top calc(100% + 5px);
+		}
 		&__title
 			display none
+		&__btn {
+			opacity 1
+		}
 		&__item
-			img
-				// width 360px
+			&--video
+				padding-bottom 56.25%
+				padding-top 25px
+				height 0
+				iframe {
+					position absolute
+					top 0
+					left 0
+					width 100%
+					height 100%
+				}
 .slick-track 
 	display flex

@@ -1,0 +1,13 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/footer/footer
+include ../components/content/light-house/main
+
+block head
+	- var pageTitle = 'Коттедж серии "Светлый Дом"';
+	- var pageDescription = 'Новый дом в пригороде г.Минска с полной отделкой, выполнен по технологии умный дом.';
+	- var pageKeywords = 'Новый дом под Минском';
+block content
+	+header
+	+main
+	+footer

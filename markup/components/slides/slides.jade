@@ -2,23 +2,9 @@ mixin slides(data)
 	+b.slides
 		+e.text
 			+e.H2.title
-				b "Стильный дом"
+				b "Светлый дом"
 				| готовое решение
-			+e.A.btn(href='project.php?id=8') Подробнее
+			+e.A.btn(href='light-house.html') Подробнее
 		+e.wrap#slider
-			+e.item
-				picture
-					source(media='(max-width: 768px)', srcset='static/img/general/slide1-m.jpg')
-					+e.IMG.image(src='static/img/general/slide1.jpg', alt='1')
-			+e.item
-				picture
-					source(media='(max-width: 768px)', srcset='static/img/general/slide2-m.jpg')
-					+e.IMG.image(src='static/img/general/slide4.jpg', alt='2')
-			+e.item
-				picture
-					source(media='(max-width: 768px)', srcset='static/img/general/slide3-m.jpg')
-					+e.IMG.image(src='static/img/general/slide3.jpg', alt='3')
-			+e.item
-				picture
-					source(media='(max-width: 768px)', srcset='static/img/general/slide4-m.jpg')
-					+e.IMG.image(src='static/img/general/slide2.jpg', alt='4')
+			+e.item--video.youtube-player(data-id='9uYIWdOSvbc')
+				//- iframe(width="748" height="500" src="https://www.youtube.com/embed/9uYIWdOSvbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen)
