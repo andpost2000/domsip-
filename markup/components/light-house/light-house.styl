@@ -1,9 +1,27 @@
 .light-house
+  &__clock
+    margin-top: 25px
+    margin-bottom: 10px
+    padding: 20px
+    box-sizing: border-box
+    min-height: 140px
+    .flip-clock-label {
+      font-size 16px
+    }
+    
+    @media screen and (max-width: 760px) {
+      display flex
+      flex-wrap wrap
+    }
   &__sub-title
     font-size 28px
     margin-top 30px
     margin-left 20px
     margin-bottom 10px
+    &.sub-title--red {
+      font-weight: 700
+      color red
+    }
     @media screen and (max-width: 760px) {
       padding 0 10px
     }

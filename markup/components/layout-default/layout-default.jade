@@ -5,76 +5,99 @@ include ../page/page
 
 doctype html
 html(lang='ru' class='no-js' prefix="og: http://ogp.me/ns#")
-	include ../head/head
-	+page
-		|%=symbols=%
+  include ../head/head
+  +page
+    |%=symbols=%
 
-		block content
-		script(src='%=static=%js/separate-js/svg4everybody.min.js')
-		script svg4everybody();
-		
-		//- Main scripts. You can replace it, but I recommend you to leave it here
-		script(src='%=static=%js/main%=hash=%%=min=%.js')
+    block content
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
 
-		// google analitic
-		script.
-			(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-			(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-			ga('create', 'UA-101767101-1', 'auto');
-			ga('send', 'pageview');
-		// Yandex.Metrika counter
-		script(type='text/javascript').
-			(function(d, w, c) {
-			(w[c] = w[c] || []).push(function() {
-			try {
-			w.yaCounter44555589 = new Ya.Metrika({
-			id: 44555589,
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor:true
-			});
-			} catch (e) {}
-			});
-			var n = d.getElementsByTagName("script")[0],
-			s = d.createElement("script"),
-			f = function() {
-			n.parentNode.insertBefore(s, n);
-			};
-			s.type = "text/javascript";
-			s.async = true;
-			s.src = "https://mc.yandex.ru/metrika/watch.js";
-			if (w.opera == "[object Opera]") {
-			d.addEventListener("DOMContentLoaded", f, false);
-			} else {
-			f();
-			}
-			})(document, window, "yandex_metrika_callbacks");
-		noscript
-			div
-				img(src='https://mc.yandex.ru/watch/44555589', style='position:absolute; left:-9999px;', alt='')
-		// /Yandex.Metrika counter
-		// Социальные сети
-		script(type='application/ld+json').
-			{
-			"@context": "http://schema.org",
-			"@type": "Organization",
-			"name": "ООО СТИЛЬНЫЙ ДОМ",
-			"url": "http://domsip.by",
-			"logo": "http://domsip.by/img/domsip-logo+.png",
-			"sameAs": [
-			"https://vk.com/domizsip",
-			"https://www.instagram.com/ooostilnyidom/?hl=ru",
-			"https://ok.ru/group/53658897481807",
-			"https://www.youtube.com/channel/UCD1-L9AAFsdjms6ZjrWYoGQ"
-			]
-			}
+    script.
+      var clock;
+      var futureDate = new Date("December 31, 2019 5:00 PM EDT");
+      var currentDate = new Date();
+      var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+      function dayDiff(first, second) {
+        return (second - first) / (1000 * 60 * 60 * 24);
+      }
+      if (dayDiff(currentDate, futureDate) < 100) {
+        $('.clock').addClass('twoDayDigits');
+      } else {
+        $('.clock').addClass('threeDayDigits');
+      }
+      if (diff < 0) {
+        diff = 0;
+      }
+      clock = $('.clock').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        language: 'ru',
+        countdown: true
+      });
+
+    // google analitic
+    script.
+      (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-101767101-1', 'auto');
+      ga('send', 'pageview');
+    // Yandex.Metrika counter
+    script(type='text/javascript').
+      (function(d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+      try {
+      w.yaCounter44555589 = new Ya.Metrika({
+      id: 44555589,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor:true
+      });
+      } catch (e) {}
+      });
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function() {
+      n.parentNode.insertBefore(s, n);
+      };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+      if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+      f();
+      }
+      })(document, window, "yandex_metrika_callbacks");
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/44555589', style='position:absolute; left:-9999px;', alt='')
+    // /Yandex.Metrika counter
+    // Социальные сети
+    script(type='application/ld+json').
+      {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "ООО СТИЛЬНЫЙ ДОМ",
+      "url": "http://domsip.by",
+      "logo": "http://domsip.by/img/domsip-logo+.png",
+      "sameAs": [
+      "https://vk.com/domizsip",
+      "https://www.instagram.com/ooostilnyidom/?hl=ru",
+      "https://ok.ru/group/53658897481807",
+      "https://www.youtube.com/channel/UCD1-L9AAFsdjms6ZjrWYoGQ"
+      ]
+      }
