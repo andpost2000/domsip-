@@ -9,11 +9,12 @@
     "@babel/preset-env": "^7.1.6",
     "bemto.jade": "^1.0.3",
     "jade-injected": "^1.0.2",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.1",
     "jquery-validation": "^1.16.0",
     "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.6.0",
     "smart-grid": "^1.1.0",
+    "tars": "0.0.0",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
