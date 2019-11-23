@@ -1,10 +1,15 @@
 .light-house
   position: relative
+  @media screen and (max-width: 760px) {
+    padding-top 30px
+  }
   &__button {
     position absolute
     top -50px
     right 0
     display block
+    width 250px
+    box-sizing border-box
     font-family: $font-1;
     padding: 10px 30px;
     color: #fff;
@@ -19,6 +24,11 @@
     &:hover {
       background-color: #f00;
     }
+    @media screen and (max-width: 760px) {
+      top 10px
+      right 50%
+      transform: translateX(125px)
+    }
   }
   &__clock
     margin-top: 25px
@@ -29,10 +39,40 @@
     .flip-clock-label {
       font-size 16px
     }
-    
     @media screen and (max-width: 760px) {
-      display flex
-      flex-wrap wrap
+      min-height: 20vw
+      .flip-clock-label {
+        right -16vw !important
+      }
+      .flip {
+        width 10%
+        height 15vw
+        margin 0
+        margin-left 1vw
+        li {
+          line-height 15vw
+        }
+      }
+      .flip-clock-divider {
+        width 10px
+        height 15vw
+      }
+      .flip-clock-dot {
+        width 3px
+        height 3px
+        left 50%
+        transform: translateX(-50%)
+      }
+      .inn {
+        font-size 12vw !important
+      }
+      .up {
+        &:after {
+          top unset !important
+          bottom: 0
+          height 2px !important
+        }
+      }
     }
   &__sub-title
     font-size 28px
@@ -64,6 +104,7 @@
         color red
         b {
           font-size 40px
+          white-space: nowrap
         }
       }
     }
@@ -117,7 +158,7 @@
     margin-bottom 20px
   }
   &__list
-    width 45%
+    // width 45%
     padding-left 30px
     list-style: unset
     &:first-child {
@@ -364,10 +405,17 @@ $light-grey: #e6e6e6
   box-shadow: 0 4px 18px 0 rgba(52,57,72,.28)
   z-index: 500
   text-align: center
+  overflow: hidden
   display: none
 
-  &.open {
-    display block
+  @media all and (max-width: 720px) {
+    width 100%
+    box-sizing border-box
+    top 0
+    left 0
+    transform: unset
+    border-radius: 0
+    padding 30px 10px
   }
 
   &__close-btn {
@@ -385,6 +433,7 @@ $light-grey: #e6e6e6
     height 25px
     cursor: pointer
     color #555
+    z-index: 5
     transition: 0.2s
 
     &:hover {
@@ -439,10 +488,36 @@ $light-grey: #e6e6e6
     outline: 0
   }
 
+  &__info {
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    background #fff
+    font-size 26px
+    margin-bottom 0
+    display none
+    svg {
+      position absolute
+      top 0
+      left 50%
+      transform: translateX(-50%)
+    }
+    div {
+      padding-top 130px
+      margin: 0 auto
+      color: red
+      p {
+        color #000
+      }
+    }
+  }
+
   &__button {
     display inline-block
     font-family: $font-1;
-    margin-top 20px
+    margin-top 5px
     padding: 10px 30px;
     color: #fff;
     text-transform: uppercase;

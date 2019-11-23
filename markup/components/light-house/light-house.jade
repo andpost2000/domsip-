@@ -1,6 +1,6 @@
 mixin light-house(data)
   +b.light-house
-    +e.A.button#callBtn Перезвоните мне
+    +e.A.button#callBtn(onclick="yaCounter44555589.reachGoal('callMe'); return true;") Перезвоните мне
     +e.H3.sub-title Кредитование на покупку жилья
     +e.P.text Первоначальныый взнос 10%.
     +e.P.text Срок пользования кредитом 20 лет. "Ставка рефинансирования НБ РБ" + 5.4%.
@@ -8,7 +8,7 @@ mixin light-house(data)
       +e.A.link(href="https://belarusbank.by/ru/fizicheskim_licam/kredit/financing/kredit_na_zhilye_doma_i_kvartiry" target='_blank') подробнее
     +e.P.text "Белагропромбанк" - 
       +e.A.link(href="https://www.belapb.by/rus/natural/credits/property/house_purchase/" target='_blank') подробнее
-    +e.H3.sub-title.sub-title--red Новогодняя Скидка 10 % до&nbsp;31 Декабря.
+    +e.H3.sub-title.sub-title--red Новогодняя Скидка 10 % до&nbsp;31&nbspДекабря.
     +e.H3.sub-title.price-cost Цена: 69 900 у.е.
     +e.H3.sub-title.price-cost--red Цена по  акции: 
       B 62 900 у.е.
@@ -225,7 +225,7 @@ mixin light-house(data)
     +b.DIV.modal-call
       +e.BUTTON.close-btn Закрыть
       +e.H2.title Представьтесь пожалуйста
-      +e.FORM(id='callForm' action='/send-mail.php' method="post")
+      +e.FORM(onsubmit="yaCounter44555589.reachGoal('sendPhone'); return true;" id='callForm' action='/send-mail.php' method="post")
         +e.DIV.field
           +e.LABEL(for='name').label Ваше имя:
           +e.INPUT(id="name" type="text" name="name" required).input
@@ -233,3 +233,8 @@ mixin light-house(data)
           +e.LABEL(for='phone').label Ваш телефон:
           +e.INPUT(id="phone" type='text' name="phone" placeholder="+375-XX-XXX-XX-XX" required).input
         +e.BUTTON(type="submit").button Отправить
+        +e.DIV.info
+          svg(width='70')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#check-ok')
+          DIV Сообщение отправлено!
+            P Наш менеджер скоро перезвонит

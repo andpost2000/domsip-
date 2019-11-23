@@ -1,9 +1,10 @@
-$(".modal-call__close-btn").click(function () {
-  $('.modal-call').removeClass('open');
+$(".modal-call__close-btn").click(function () {  
+  $('.modal-call').fadeOut(300);
 });
 
-$("#callBtn").click(function () {
-  $('.modal-call').addClass('open');
+$("#callBtn").click(function (event) {
+  event.preventDefault();
+  $('.modal-call').fadeIn(300);
 });
 
 
@@ -15,7 +16,8 @@ $("#callForm").submit(function (event) {
       $('#result').html(data);
     });
 
-  $('.modal-call').removeClass('open');
+  $('.modal-call__info').fadeIn(200);
+  $('.modal-call').delay(3000).fadeOut(300);
 });
 
 
