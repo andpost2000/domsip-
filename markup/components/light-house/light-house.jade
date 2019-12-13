@@ -1,8 +1,21 @@
 mixin light-house(data)
   +b.light-house
-    +e.A.button#callBtn(onclick="yaCounter44555589.reachGoal('callMe'); return true;") Перезвоните мне
-    +e.H3.sub-title Кредитование на покупку жилья
-    +e.P.text Первоначальныый взнос 10%.
+    +e.DIV.contacts
+      +e.A.button#callBtn(onclick="yaCounter44555589.reachGoal('callMe'); return true;") Перезвоните мне
+      +e.DIV.phones
+        +e.P.phones-text Мы с радостью  ответим на ваши вопросы
+        +e.A.phones-link(href="tel:+375296945552")
+          span тел. для 
+          B РБ: 
+          | +375 29 694 55 52 
+          span Марина
+        +e.A.phones-link(href="tel:+79267292845")
+          span тел. для 
+          B РФ: 
+          | +7 926 729 28 45 
+          span Василий
+    +e.H3.sub-title#kredit Кредитование на покупку жилья
+    +e.P.text Первоначальный взнос 10%.
     +e.P.text Срок пользования кредитом 20 лет. "Ставка рефинансирования НБ РБ" + 5.4%.
     +e.P.text "Беларусьбанк" - 
       +e.A.link(href="https://belarusbank.by/ru/fizicheskim_licam/kredit/financing/kredit_na_zhilye_doma_i_kvartiry" target='_blank') подробнее
@@ -20,7 +33,7 @@ mixin light-house(data)
       | площадью 100 квадратов 
       B с отделкой и полностью готовое к заселению, 
       | с участком в 10-12 соток.
-    +e.video
+    +e.video#video
       iframe(width="748" height="500" src="https://www.youtube.com/embed/9uYIWdOSvbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen)
     +e.P.text Мы осуществляем продажу
       B Экологических каркасных домов 
@@ -220,8 +233,11 @@ mixin light-house(data)
     +e.P.text e-mail:
       +e.A.link-mail(href="mailto:raimark@tut.by") raimark@tut.by
       +e.A.link-tel(href="tel:+375296945552")
-        span тел. 
-        | +375 29 694 55 52
+        span тел. РБ 
+        | +375 29 694 55 52; 
+      +e.A.link-tel(href="tel:+79267292845")
+        span тел. РФ 
+        | +7 926 729 28 45;
     +b.DIV.modal-call
       +e.BUTTON.close-btn Закрыть
       +e.H2.title Представьтесь пожалуйста
@@ -231,7 +247,7 @@ mixin light-house(data)
           +e.INPUT(id="name" type="text" name="name" required).input
         +e.DIV.field
           +e.LABEL(for='phone').label Ваш телефон:
-          +e.INPUT(id="phone" type='text' name="phone" placeholder="+375-XX-XXX-XX-XX" required).input
+          +e.INPUT(id="phone" type='text' name="phone" required).input
         +e.BUTTON(type="submit").button Отправить
         +e.DIV.info
           svg(width='70')
