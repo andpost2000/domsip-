@@ -1,4 +1,18 @@
 {
+    "gulp-terser": {
+        "mangle": false,
+        "compress": {
+            "drop_console": "insert(tars.config.js.removeConsoleLog)",
+            "drop_debugger": "insert(tars.config.js.removeConsoleLog)"
+        }
+    },
+    "gulp-uglify": {
+        "mangle": false,
+        "compress": {
+            "drop_console": "insert(tars.config.js.removeConsoleLog)",
+            "drop_debugger": "insert(tars.config.js.removeConsoleLog)"
+        }
+    },
     // You can find docs for this file here: ./docs/en|ru/plugins-options.md
     "autoprefixerConfig": [
         "> 1%",
@@ -104,12 +118,5 @@
         "indent_char": " ",
         "indent_size": 4,
         "indent_inner_html": true
-    },
-    "gulp-uglify": {
-        "mangle": false,
-        "compress": {
-            "drop_console": "insert(tars.config.js.removeConsoleLog)",
-            "drop_debugger": "insert(tars.config.js.removeConsoleLog)"
-        }
     }
 }

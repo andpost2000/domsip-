@@ -1,0 +1,12 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../politic/politic
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Политика конфиденциальности
+		+e.wrap
+			+col-left
+			+b.col-center
+				+politic
+			+col-right
