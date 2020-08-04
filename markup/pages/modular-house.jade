@@ -1,0 +1,13 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/footer/footer
+include ../components/content/modular-house/main
+
+block head
+	- var pageTitle = 'Модульный дом из СИП панелей';
+	- var pageDescription = 'Модульный дом из СИП панелей. С возможностью установки на блоки ФБС без монолитного фундамента.';
+	- var pageKeywords = 'Модульный дом из СИП, домокомплект, СИП';
+block content
+	+header
+	+main
+	+footer

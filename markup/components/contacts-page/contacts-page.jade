@@ -1,53 +1,39 @@
 mixin contacts-page(data)
-	+b.map
-		script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A364d15d0f1c9847205b38260e1e51e630d078b686414828b45214f08cb3aa27f&lang=ru_RU&scroll=true')
-	+b.contacts-page
-		+e.item
-			+e.B.title Юридический адрес:
-			+e.P.adres
-				| ООО "Стильный дом",
-				br
-				|  211875 Беларусь, Виттебская обл.,
-				br
-				|  г. Поставы, ул. Космонавтов д. 26 
-				sup В
-				br
-				|  УНП 390431001, р/с 3012020343064
-				br
-				|  в ЦБУ №230 ф. №216
-				br
-				|  ОАО «Беларусбанк» в г. Полоцк.
-			+e.SPAN.phone
-				span Телефон/факс:
-				| +375(2155) 4-25-80 
-			+e.SPAN.mail
-				span Наш e-mail:
-				a(href='mailto:stilndom@gmail.com') stilndom@gmail.com
-			+e.P.worker
-				+e.SPAN.worker-type Директор:
-				br
-				| Подрез Владимир Викентьевич
-				+e.SPAN.worker-phone._mts +375(29) 713-97-11
-				+e.SPAN.worker-phone._velcom +375(29) 139-05-75
-		+e.item
-			+e.B.title Офис в Минске:
-			+e.P.adres
-				| ООО "Стильный дом",
-				br
-				|  220012 Беларусь, г. Минск,
-				br
-				| ул. Волгоградская, д. 8, ком. 29
-			+e.SPAN.phone
-				span Телефон/факс:
-				| +375(17) 267-23-69
-			+e.P.worker
-				+e.SPAN.worker-type Архитектор:
-				br
-				| Денис
-				+e.SPAN.worker-phone._mts +375(29) 701-23-48
-				+e.SPAN.worker-phone._velcom +375(29) 992-21-50
-			+e.P.worker
-				+e.SPAN.worker-type Менеджер:
-				br
-				| Марина
-				+e.SPAN.worker-phone._velcom +375(29) 694-55-52
+  +b.map
+    script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A364d15d0f1c9847205b38260e1e51e630d078b686414828b45214f08cb3aa27f&lang=ru_RU&scroll=true')
+  +b.contacts-page
+    +e.item
+      +e.B.title Юридический адрес:
+      +e.P.adres
+        | ООО "Стильный дом",
+        br
+        |  211875 Беларусь, Виттебская обл.,
+        br
+        |  г. Поставы, ул. Космонавтов д. 26 
+        sup В
+        br
+        |  УНП 390431001, р/с 3012020343064
+        br
+        |  в ЦБУ №230 ф. №216
+        br
+        |  ОАО «Беларусбанк» в г. Полоцк.
+      +e.SPAN.phone
+        span Телефон/факс:
+        | +375(2155) 4-25-80 
+      +e.SPAN.mail
+        span Наш e-mail:
+        a(href='mailto:stilndom@gmail.com') stilndom@gmail.com
+      +e.P.worker
+        +e.SPAN.worker-type Директор:
+        br
+        | Подрез Владимир Викентьевич
+        +e.SPAN.worker-phone._mts +375(29) 713-97-11
+        +e.SPAN.worker-phone._velcom +375(29) 139-05-75
+    +e.item
+      +e.P.worker
+        +e.SPAN.worker-type Специалист по продажам:
+        br
+        | Марина
+        +e.SPAN.worker-phone._velcom +375(29) 694-55-52
+        +e.SPAN.worker-phone._mail
+          a(href="mailto:raimark@tut.by") raimark@tut.by

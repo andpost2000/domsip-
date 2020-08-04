@@ -1,0 +1,22 @@
+include ../../col-left/col-left
+include ../../col-right/col-right
+include ../../modular-house/modular-house
+mixin main(data)
+	+b.MAIN.page-content
+		+e.title-wrap
+			+e.H1.title Модульный дом из СИП
+		+e.wrap
+			+col-left
+			+b.col-center
+				+b.breadcrumbs
+					+e.UL.list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+						+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+							+e.A.link(href='/', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+								span(itemprop='name') Главная
+							meta(itemprop="position" content="1")
+						+e.LI.item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+							+e.A.link(href='#', itemscope='', itemtype='http://schema.org/Thing', itemprop='item')
+								span(itemprop='name') Модульный дом из СИП
+							meta(itemprop="position" content="2")
+				+modular-house
+			+col-right
